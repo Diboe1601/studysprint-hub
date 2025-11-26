@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import BlogCard from "@/components/BlogCard";
@@ -7,6 +8,7 @@ import onlineCoursesImage from "@/assets/blog-online-courses.jpg";
 import productivityImage from "@/assets/blog-productivity.jpg";
 
 const Blog = () => {
+  const [selectedCategory, setSelectedCategory] = useState("All Posts");
   const categories = [
     "All Posts",
     "Study Hacks & Tips",
@@ -67,6 +69,10 @@ const Blog = () => {
     },
   ];
 
+  const filteredPosts = selectedCategory === "All Posts" 
+    ? blogPosts 
+    : blogPosts.filter(post => post.category === selectedCategory);
+
   return (
     <div className="flex min-h-screen flex-col">
       <Navigation />
@@ -88,9 +94,10 @@ const Blog = () => {
             {categories.map((category) => (
               <Button
                 key={category}
-                variant={category === "All Posts" ? "default" : "outline"}
+                variant={category === selectedCategory ? "default" : "outline"}
                 size="sm"
                 className="whitespace-nowrap"
+                onClick={() => setSelectedCategory(category)}
               >
                 {category}
               </Button>
@@ -103,7 +110,7 @@ const Blog = () => {
       <section className="py-16">
         <div className="container">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {blogPosts.map((post) => (
+            {filteredPosts.map((post) => (
               <BlogCard key={post.id} {...post} />
             ))}
           </div>
