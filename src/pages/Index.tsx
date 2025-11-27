@@ -11,63 +11,53 @@ import heroImage from "@/assets/hero-image.jpg";
 import studyAppsImage from "@/assets/blog-study-apps.jpg";
 import onlineCoursesImage from "@/assets/blog-online-courses.jpg";
 import productivityImage from "@/assets/blog-productivity.jpg";
-
 const Index = () => {
   const [email, setEmail] = useState("");
-  const { toast } = useToast();
-
+  const {
+    toast
+  } = useToast();
   const handleEmailSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
       toast({
         title: "Success!",
-        description: "Thank you for subscribing! Check your email for the study planner.",
+        description: "Thank you for subscribing! Check your email for the study planner."
       });
       setEmail("");
     }
   };
-
-  const featuredPosts = [
-    {
-      id: "best-study-apps-2025",
-      title: "Top 10 Best Study Apps for Students in 2025",
-      excerpt: "Discover the most powerful study apps that will transform your learning experience and boost your productivity.",
-      category: "Apps & Tools",
-      image: studyAppsImage,
-      date: "Jan 15, 2025",
-    },
-    {
-      id: "coursera-vs-udemy",
-      title: "Coursera vs Udemy: Which Platform is Right for You?",
-      excerpt: "A comprehensive comparison of the two leading online learning platforms to help you make the best choice.",
-      category: "Online Courses",
-      image: onlineCoursesImage,
-      date: "Jan 12, 2025",
-    },
-    {
-      id: "study-effectively-guide",
-      title: "How to Study Effectively: Science-Backed Techniques",
-      excerpt: "Learn proven study techniques based on cognitive science that will help you retain more information.",
-      category: "Study Hacks",
-      image: productivityImage,
-      date: "Jan 10, 2025",
-    },
-  ];
-
-  return (
-    <div className="flex min-h-screen flex-col">
+  const featuredPosts = [{
+    id: "best-study-apps-2025",
+    title: "Top 10 Best Study Apps for Students in 2025",
+    excerpt: "Discover the most powerful study apps that will transform your learning experience and boost your productivity.",
+    category: "Apps & Tools",
+    image: studyAppsImage,
+    date: "Jan 15, 2025"
+  }, {
+    id: "coursera-vs-udemy",
+    title: "Coursera vs Udemy: Which Platform is Right for You?",
+    excerpt: "A comprehensive comparison of the two leading online learning platforms to help you make the best choice.",
+    category: "Online Courses",
+    image: onlineCoursesImage,
+    date: "Jan 12, 2025"
+  }, {
+    id: "study-effectively-guide",
+    title: "How to Study Effectively: Science-Backed Techniques",
+    excerpt: "Learn proven study techniques based on cognitive science that will help you retain more information.",
+    category: "Study Hacks",
+    image: productivityImage,
+    date: "Jan 10, 2025"
+  }];
+  return <div className="flex min-h-screen flex-col">
       <Navigation />
 
       {/* Hero Section */}
-      <section 
-        className="relative overflow-hidden min-h-[700px] md:min-h-[800px] flex items-center"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
+      <section className="relative overflow-hidden min-h-[700px] md:min-h-[800px] flex items-center" style={{
+      backgroundImage: `url(${heroImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}>
         {/* Dark Overlay for Text Readability */}
         <div className="absolute inset-0 bg-black/60" />
         
@@ -89,7 +79,7 @@ const Index = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 py-6 border-y border-white/30">
               <div>
-                <div className="text-3xl font-bold mb-1 drop-shadow-lg">500+</div>
+                <div className="text-3xl font-bold mb-1 drop-shadow-lg">50+</div>
                 <div className="text-sm text-white/90 drop-shadow-md">Study Guides</div>
               </div>
               <div>
@@ -97,7 +87,7 @@ const Index = () => {
                 <div className="text-sm text-white/90 drop-shadow-md">Tool Reviews</div>
               </div>
               <div>
-                <div className="text-3xl font-bold mb-1 drop-shadow-lg">50k+</div>
+                <div className="text-3xl font-bold mb-1 drop-shadow-lg">1000+</div>
                 <div className="text-sm text-white/90 drop-shadow-md">Students Helped</div>
               </div>
             </div>
@@ -128,14 +118,7 @@ const Index = () => {
                 Sign up now and receive our comprehensive study planner template to organize your learning journey.
               </p>
               <form onSubmit={handleEmailSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                <Input
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  className="flex-1"
-                />
+                <Input type="email" placeholder="Enter your email" value={email} onChange={e => setEmail(e.target.value)} required className="flex-1" />
                 <Button type="submit" size="lg">
                   Download Free
                 </Button>
@@ -155,9 +138,7 @@ const Index = () => {
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {featuredPosts.map((post) => (
-              <BlogCard key={post.id} {...post} />
-            ))}
+            {featuredPosts.map(post => <BlogCard key={post.id} {...post} />)}
           </div>
           <div className="mt-12 text-center">
             <Button variant="outline" size="lg" asChild>
@@ -186,8 +167,6 @@ const Index = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
