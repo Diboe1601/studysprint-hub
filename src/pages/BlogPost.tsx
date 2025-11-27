@@ -1,6 +1,7 @@
 import { useParams, Link, Navigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ShuffleHero from "@/components/ShuffleHero";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
@@ -20,15 +21,13 @@ const BlogPost = () => {
       <Navigation />
 
       <article className="flex-1">
-        {/* Hero Section */}
-        <div className="relative h-[400px] overflow-hidden">
-          <img
-            src={post.image}
-            alt={post.title}
-            className="h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
-        </div>
+        <ShuffleHero
+          badge={post.category}
+          title={post.title}
+          description={post.excerpt}
+          buttonText="Back to Blog"
+          buttonLink="/blog"
+        />
 
         {/* Content */}
         <div className="container max-w-4xl py-12">

@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ShuffleHero from "@/components/ShuffleHero";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { BookOpen, Target, Users, Heart } from "lucide-react";
@@ -9,15 +10,13 @@ const About = () => {
     <div className="flex min-h-screen flex-col">
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-b from-primary to-accent py-16 text-white">
-        <div className="container text-center">
-          <h1 className="text-4xl font-bold mb-4 md:text-5xl">About StudySprint</h1>
-          <p className="text-lg text-white/90 max-w-2xl mx-auto">
-            Empowering students through smarter study habits and digital learning tools.
-          </p>
-        </div>
-      </section>
+      <ShuffleHero
+        badge="🚀 Our Story"
+        title="About StudySprint"
+        description="Empowering students through smarter study habits and digital learning tools. Discover our mission to transform education."
+        buttonText="Join Our Community"
+        buttonLink="/contact"
+      />
 
       {/* Mission Section */}
       <section className="py-16">

@@ -59,35 +59,58 @@ const Index = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 gradient-hero opacity-90" />
-        <div className="relative container py-20 md:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-accent">
+        <div className="container py-16 md:py-24 lg:py-32">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-            <div className="space-y-6 text-white">
-              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-                Unlock Your Learning Potential
-              </h1>
-              <p className="text-lg md:text-xl text-white/90 max-w-xl">
-                Discover study tips, tools, and online platforms that make learning easier and smarter.
-              </p>
+            <div className="space-y-8 text-white">
+              <div>
+                <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-6">
+                  🎓 Trusted by 50,000+ Students
+                </span>
+                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl mb-6">
+                  Unlock Your Learning Potential
+                </h1>
+                <p className="text-lg md:text-xl text-white/90 max-w-xl mb-8">
+                  Discover study tips, tools, and online platforms that make learning easier and smarter. Join thousands of students achieving academic success.
+                </p>
+              </div>
+              
+              {/* Stats */}
+              <div className="grid grid-cols-3 gap-6 py-6 border-y border-white/20">
+                <div>
+                  <div className="text-3xl font-bold mb-1">500+</div>
+                  <div className="text-sm text-white/80">Study Guides</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold mb-1">100+</div>
+                  <div className="text-sm text-white/80">Tool Reviews</div>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold mb-1">50k+</div>
+                  <div className="text-sm text-white/80">Students Helped</div>
+                </div>
+              </div>
+
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" variant="secondary" asChild>
+                <Button size="lg" variant="secondary" asChild className="text-lg">
                   <Link to="/blog">
                     Start Learning
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary">
+                <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary text-lg">
                   <Link to="/about">Learn More</Link>
                 </Button>
               </div>
             </div>
-            <div className="relative">
+            
+            <div className="relative lg:h-[600px] h-[400px]">
               <img
                 src={heroImage}
-                alt="Students studying"
-                className="rounded-2xl shadow-elegant w-full"
+                alt="Students studying together with laptops and books"
+                className="rounded-2xl shadow-2xl w-full h-full object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl" />
             </div>
           </div>
         </div>

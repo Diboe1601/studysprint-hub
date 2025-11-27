@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ShuffleHero from "@/components/ShuffleHero";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -39,15 +40,13 @@ const Contact = () => {
     <div className="flex min-h-screen flex-col">
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="bg-gradient-to-b from-primary to-accent py-16 text-white">
-        <div className="container text-center">
-          <h1 className="text-4xl font-bold mb-4 md:text-5xl">Contact Us</h1>
-          <p className="text-lg text-white/90 max-w-2xl mx-auto">
-            Have questions or suggestions? We'd love to hear from you!
-          </p>
-        </div>
-      </section>
+      <ShuffleHero
+        badge="💬 Get In Touch"
+        title="Contact Us"
+        description="Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible."
+        buttonText="Email Us"
+        buttonLink="mailto:contact@studysprint.com"
+      />
 
       {/* Contact Section */}
       <section className="py-16">
