@@ -59,58 +59,59 @@ const Index = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary via-primary/95 to-accent">
-        <div className="container py-16 md:py-24 lg:py-32">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-            <div className="space-y-8 text-white">
-              <div>
-                <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-6">
-                  🎓 Trusted by 50,000+ Students
-                </span>
-                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl mb-6">
-                  Unlock Your Learning Potential
-                </h1>
-                <p className="text-lg md:text-xl text-white/90 max-w-xl mb-8">
-                  Discover study tips, tools, and online platforms that make learning easier and smarter. Join thousands of students achieving academic success.
-                </p>
-              </div>
-              
-              {/* Stats */}
-              <div className="grid grid-cols-3 gap-6 py-6 border-y border-white/20">
-                <div>
-                  <div className="text-3xl font-bold mb-1">500+</div>
-                  <div className="text-sm text-white/80">Study Guides</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold mb-1">100+</div>
-                  <div className="text-sm text-white/80">Tool Reviews</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold mb-1">50k+</div>
-                  <div className="text-sm text-white/80">Students Helped</div>
-                </div>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" variant="secondary" asChild className="text-lg">
-                  <Link to="/blog">
-                    Start Learning
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-                <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary text-lg">
-                  <Link to="/about">Learn More</Link>
-                </Button>
-              </div>
+      <section 
+        className="relative overflow-hidden min-h-[700px] md:min-h-[800px] flex items-center"
+        style={{
+          backgroundImage: `url(${heroImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Dark Overlay for Text Readability */}
+        <div className="absolute inset-0 bg-black/60" />
+        
+        {/* Content */}
+        <div className="container relative z-10 py-16 md:py-24 lg:py-32">
+          <div className="max-w-3xl space-y-8 text-white">
+            <div>
+              <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-medium mb-6 shadow-lg">
+                🎓 Trusted by 50,000+ Students
+              </span>
+              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl mb-6 drop-shadow-2xl">
+                Unlock Your Learning Potential
+              </h1>
+              <p className="text-lg md:text-xl text-white/95 mb-8 drop-shadow-lg font-medium">
+                Discover study tips, tools, and online platforms that make learning easier and smarter. Join thousands of students achieving academic success.
+              </p>
             </div>
             
-            <div className="relative lg:h-[600px] h-[400px]">
-              <img
-                src={heroImage}
-                alt="Students studying together with laptops and books"
-                className="rounded-2xl shadow-2xl w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl" />
+            {/* Stats */}
+            <div className="grid grid-cols-3 gap-6 py-6 border-y border-white/30">
+              <div>
+                <div className="text-3xl font-bold mb-1 drop-shadow-lg">500+</div>
+                <div className="text-sm text-white/90 drop-shadow-md">Study Guides</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold mb-1 drop-shadow-lg">100+</div>
+                <div className="text-sm text-white/90 drop-shadow-md">Tool Reviews</div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold mb-1 drop-shadow-lg">50k+</div>
+                <div className="text-sm text-white/90 drop-shadow-md">Students Helped</div>
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button size="lg" variant="secondary" asChild className="text-lg shadow-xl">
+                <Link to="/blog">
+                  Start Learning
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button size="lg" variant="outline" className="bg-white/10 border-white/50 text-white hover:bg-white hover:text-primary text-lg backdrop-blur-sm shadow-xl">
+                <Link to="/about">Learn More</Link>
+              </Button>
             </div>
           </div>
         </div>
