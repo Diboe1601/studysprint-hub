@@ -1,6 +1,9 @@
 {
+  "static": {
+    "directory": "static"
+  },
   "rewrites": [
-    { "source": "/sitemap.xml", "destination": "/sitemap.xml" }
+    { "source": "/sitemap.xml", "destination": "/static/sitemap.xml" }
   ],
   "headers": [
     {
