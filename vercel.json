@@ -1,7 +1,4 @@
 {
-  "static": {
-    "directory": "static"
-  },
   "rewrites": [
     { "source": "/sitemap.xml", "destination": "/static/sitemap.xml" }
   ],
