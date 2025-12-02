@@ -1,6 +1,9 @@
 {
   "rewrites": [
-    { "source": "/sitemap.xml", "destination": "/static/sitemap.xml" }
+    {
+      "source": "/sitemap.xml",
+      "destination": "/static/sitemap.xml"
+    }
   ],
   "headers": [
     {
