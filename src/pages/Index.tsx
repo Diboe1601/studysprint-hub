@@ -6,6 +6,8 @@ import BlogCard from "@/components/BlogCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { NumberTicker } from "@/components/ui/number-ticker";
+import { Marquee } from "@/components/ui/marquee";
+import { cn } from "@/lib/utils";
 import { ArrowRight, Download, BookOpen, Users, Target, Award, Clock, CheckCircle, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import heroImage from "@/assets/hero-image.jpg";
@@ -128,21 +130,91 @@ const Index = () => {
       name: "Karabo Natasha",
       role: "Medical Student",
       content: "StudySprint helped me improve my grades by 2 full points. The study techniques are life-changing!",
-      rating: 5
+      rating: 5,
+      img: "https://avatar.vercel.sh/karabo"
     },
     {
       name: "Sizwe Valashiya",
       role: "Bachelor of Science Student",
       content: "The app recommendations and time management tips saved me hours each week. Highly recommended!",
-      rating: 5
+      rating: 5,
+      img: "https://avatar.vercel.sh/sizwe"
     },
     {
       name: "Katleho Leswetsa",
       role: "High School Student",
       content: "Finally found a platform that understands how students actually learn. The guides are so practical!",
-      rating: 4
+      rating: 4,
+      img: "https://avatar.vercel.sh/katleho"
+    },
+    {
+      name: "Thandi Mokoena",
+      role: "Law Student",
+      content: "The Pomodoro technique guide changed how I approach my studies. I'm more productive than ever!",
+      rating: 5,
+      img: "https://avatar.vercel.sh/thandi"
+    },
+    {
+      name: "David Nkosi",
+      role: "Engineering Student",
+      content: "Best study resource I've found online. The tool reviews are honest and incredibly helpful.",
+      rating: 5,
+      img: "https://avatar.vercel.sh/david"
+    },
+    {
+      name: "Lerato Dlamini",
+      role: "Commerce Student",
+      content: "The scholarship guides helped me find funding I didn't even know existed. Thank you StudySprint!",
+      rating: 5,
+      img: "https://avatar.vercel.sh/lerato"
+    },
+    {
+      name: "Mpho Sithole",
+      role: "IT Student",
+      content: "Active recall techniques from StudySprint helped me ace my programming exams. Game changer!",
+      rating: 5,
+      img: "https://avatar.vercel.sh/mpho"
+    },
+    {
+      name: "Naledi Khumalo",
+      role: "Nursing Student",
+      content: "The study planner template is perfect for organizing my clinical rotations and theory work.",
+      rating: 4,
+      img: "https://avatar.vercel.sh/naledi"
     }
   ];
+
+  const firstRow = testimonials.slice(0, testimonials.length / 2);
+  const secondRow = testimonials.slice(testimonials.length / 2);
+
+  const TestimonialCard = ({ img, name, role, content, rating }: typeof testimonials[0]) => (
+    <figure
+      className={cn(
+        "relative w-80 cursor-pointer overflow-hidden rounded-xl border p-4",
+        "border-border bg-card hover:bg-accent/10",
+        "transition-colors duration-200"
+      )}
+    >
+      <div className="flex items-center gap-1 mb-3">
+        {[...Array(5)].map((_, i) => (
+          <Star 
+            key={i} 
+            className={`h-4 w-4 ${
+              i < rating ? "text-yellow-400 fill-yellow-400" : "text-muted"
+            }`} 
+          />
+        ))}
+      </div>
+      <blockquote className="text-sm text-muted-foreground mb-4 italic">"{content}"</blockquote>
+      <div className="flex flex-row items-center gap-2">
+        <img className="rounded-full" width="32" height="32" alt={name} src={img} />
+        <div className="flex flex-col">
+          <figcaption className="text-sm font-medium">{name}</figcaption>
+          <p className="text-xs text-muted-foreground">{role}</p>
+        </div>
+      </div>
+    </figure>
+  );
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -312,27 +384,20 @@ const Index = () => {
               Join thousands of students who have transformed their study habits with our guidance
             </p>
           </div>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-card p-6 rounded-lg border shadow-sm">
-                <div className="flex items-center gap-1 mb-3">
-                  {[...Array(5)].map((_, i) => (
-                    <Star 
-                      key={i} 
-                      className={`h-4 w-4 ${
-                        i < testimonial.rating ? "text-yellow-400 fill-yellow-400" : "text-gray-300"
-                      }`} 
-                    />
-                  ))}
-                </div>
-                <p className="text-muted-foreground mb-4 italic">"{testimonial.content}"</p>
-                <div>
-                  <div className="font-semibold">{testimonial.name}</div>
-                  <div className="text-sm text-muted-foreground">{testimonial.role}</div>
-                </div>
-              </div>
+        </div>
+        <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+          <Marquee pauseOnHover className="[--duration:30s]">
+            {firstRow.map((testimonial) => (
+              <TestimonialCard key={testimonial.name} {...testimonial} />
             ))}
-          </div>
+          </Marquee>
+          <Marquee reverse pauseOnHover className="[--duration:30s]">
+            {secondRow.map((testimonial) => (
+              <TestimonialCard key={testimonial.name} {...testimonial} />
+            ))}
+          </Marquee>
+          <div className="from-background pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r"></div>
+          <div className="from-background pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l"></div>
         </div>
       </section>
 
