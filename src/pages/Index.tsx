@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import BlogCard from "@/components/BlogCard";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { NumberTicker } from "@/components/ui/number-ticker";
 import { ArrowRight, Download, BookOpen, Users, Target, Award, Clock, CheckCircle, Star } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import heroImage from "@/assets/hero-image.jpg";
@@ -179,15 +180,21 @@ const Index = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 py-6 border-y border-white/30">
               <div>
-                <div className="text-3xl font-bold mb-1 drop-shadow-lg">50+</div>
+                <div className="text-3xl font-bold mb-1 drop-shadow-lg">
+                  <NumberTicker value={50} className="text-white" />+
+                </div>
                 <div className="text-sm text-white/90 drop-shadow-md">Study Guides</div>
               </div>
               <div>
-                <div className="text-3xl font-bold mb-1 drop-shadow-lg">100+</div>
+                <div className="text-3xl font-bold mb-1 drop-shadow-lg">
+                  <NumberTicker value={100} className="text-white" delay={200} />+
+                </div>
                 <div className="text-sm text-white/90 drop-shadow-md">Tool Reviews</div>
               </div>
               <div>
-                <div className="text-3xl font-bold mb-1 drop-shadow-lg">1000+</div>
+                <div className="text-3xl font-bold mb-1 drop-shadow-lg">
+                  <NumberTicker value={1000} className="text-white" delay={400} />+
+                </div>
                 <div className="text-sm text-white/90 drop-shadow-md">Students Helped</div>
               </div>
             </div>
