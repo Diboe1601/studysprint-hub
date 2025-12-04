@@ -45,7 +45,7 @@ const Contact = () => {
         title="Contact Us"
         description="Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible."
         buttonText="Email Us"
-        buttonLink="mailto:contact@studysprint.com"
+        buttonLink="mailto:studysprint-official@gmail.com"
       />
 
       {/* Contact Section */}
@@ -68,7 +68,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Email</h3>
-                    <p className="text-muted-foreground">contact@studysprint.com</p>
+                    <p className="text-muted-foreground">studysprint-official@gmail.com</p>
                   </div>
                 </div>
 
@@ -79,7 +79,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Social Media</h3>
                     <p className="text-muted-foreground">
-                      Follow us on Instagram, TikTok, and X for daily study tips
+                      Follow us on Instagram, TikTok, and Facebook for daily study tips
                     </p>
                   </div>
                 </div>
