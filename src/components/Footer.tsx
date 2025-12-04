@@ -1,5 +1,20 @@
 import { Link } from "react-router-dom";
-import { BookOpen, Instagram, Facebook, Twitter } from "lucide-react";
+import { BookOpen, Instagram, Facebook } from "lucide-react";
+
+const TikTokIcon = ({ className }: { className?: string }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+  </svg>
+);
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -96,13 +111,13 @@ const Footer = () => {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://tiktok.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Twitter/X"
+                aria-label="TikTok"
               >
-                <Twitter className="h-5 w-5" />
+                <TikTokIcon className="h-5 w-5" />
               </a>
             </div>
             <ul className="space-y-2 text-sm">
