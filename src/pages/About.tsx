@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ShuffleHero from "@/components/ShuffleHero";
 import { Button } from "@/components/ui/button";
+import { NumberTicker } from "@/components/ui/number-ticker";
 import { Link } from "react-router-dom";
 import { BookOpen, Target, Users, Heart, Award, Clock, TrendingUp, Globe, Star, CheckCircle } from "lucide-react";
 
@@ -128,19 +129,27 @@ const About = () => {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">1,000+</div>
+              <div className="text-3xl font-bold text-primary mb-2">
+                <NumberTicker value={1000} />+
+              </div>
               <div className="text-sm text-muted-foreground">Students Helped</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">50+</div>
+              <div className="text-3xl font-bold text-primary mb-2">
+                <NumberTicker value={50} delay={200} />+
+              </div>
               <div className="text-sm text-muted-foreground">Study Guides</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">100+</div>
+              <div className="text-3xl font-bold text-primary mb-2">
+                <NumberTicker value={100} delay={400} />+
+              </div>
               <div className="text-sm text-muted-foreground">Tool Reviews</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">25+</div>
+              <div className="text-3xl font-bold text-primary mb-2">
+                <NumberTicker value={25} delay={600} />+
+              </div>
               <div className="text-sm text-muted-foreground">Countries Reached</div>
             </div>
           </div>
