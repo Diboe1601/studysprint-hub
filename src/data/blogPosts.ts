@@ -729,68 +729,94 @@ export const blogPosts: BlogPost[] = [
     category: "Apps & Tools",
     image: productivityImage,
     date: "December 15, 2024",
-    readTime: "11 min read",
+    readTime: "14 min read",
     tags: ["Free Resources", "Budget Learning", "Tools", "Student Resources"],
     author: "Sello Mpho",
     content: `
       <p>Quality education doesn't have to be expensive. Here are incredible free resources for students that can support your learning journey without straining your budget.</p>
 
       <h2>Academic Resources</h2>
-      <p>Google Scholar, JSTOR, Library Genesis - access millions of academic papers for free.</p>
+      <p>Access millions of academic papers, journals, and research materials for free.</p>
       <ul>
-        <li><strong>Google Scholar:</strong> Search academic papers and citations</li>
-        <li><strong>JSTOR:</strong> Digital library of academic journals</li>
-        <li><strong>Library Genesis:</strong> Access to books and articles</li>
-        <li><strong>arXiv:</strong> Preprint repository for sciences</li>
-        <li><strong>Directory of Open Access Journals:</strong> Free scholarly articles</li>
+        <li><strong><a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">Google Scholar</a>:</strong> Search academic papers and citations</li>
+        <li><strong><a href="https://www.jstor.org/" target="_blank" rel="noopener noreferrer">JSTOR</a>:</strong> Digital library of academic journals</li>
+        <li><strong><a href="https://libgen.is/" target="_blank" rel="noopener noreferrer">Library Genesis</a>:</strong> Access to books and articles</li>
+        <li><strong><a href="https://arxiv.org/" target="_blank" rel="noopener noreferrer">arXiv</a>:</strong> Preprint repository for sciences</li>
+        <li><strong><a href="https://doaj.org/" target="_blank" rel="noopener noreferrer">Directory of Open Access Journals</a>:</strong> Free scholarly articles</li>
+        <li><strong><a href="https://www.researchgate.net/" target="_blank" rel="noopener noreferrer">ResearchGate</a>:</strong> Academic social networking site</li>
+        <li><strong><a href="https://www.semanticscholar.org/" target="_blank" rel="noopener noreferrer">Semantic Scholar</a>:</strong> AI-powered research tool</li>
       </ul>
 
       <h2>Learning Platforms</h2>
-      <p>Khan Academy, Coursera (free courses), edX, MIT OpenCourseWare.</p>
+      <p>World-class education from top universities and educators, completely free.</p>
       <ul>
-        <li><strong>Khan Academy:</strong> Comprehensive K-12 and college courses</li>
-        <li><strong>Coursera:</strong> Free courses from top universities</li>
-        <li><strong>edX:</strong> University-level courses for free</li>
-        <li><strong>MIT OpenCourseWare:</strong> Complete MIT course materials</li>
-        <li><strong>YouTube Education:</strong> Educational channels on every topic</li>
+        <li><strong><a href="https://www.khanacademy.org/" target="_blank" rel="noopener noreferrer">Khan Academy</a>:</strong> Comprehensive K-12 and college courses</li>
+        <li><strong><a href="https://www.coursera.org/" target="_blank" rel="noopener noreferrer">Coursera</a>:</strong> Free courses from top universities (audit mode)</li>
+        <li><strong><a href="https://www.edx.org/" target="_blank" rel="noopener noreferrer">edX</a>:</strong> University-level courses for free</li>
+        <li><strong><a href="https://ocw.mit.edu/" target="_blank" rel="noopener noreferrer">MIT OpenCourseWare</a>:</strong> Complete MIT course materials</li>
+        <li><strong><a href="https://www.youtube.com/education" target="_blank" rel="noopener noreferrer">YouTube Education</a>:</strong> Educational channels on every topic</li>
+        <li><strong><a href="https://www.futurelearn.com/" target="_blank" rel="noopener noreferrer">FutureLearn</a>:</strong> Free courses from UK universities</li>
+        <li><strong><a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer">Codecademy</a>:</strong> Free coding courses for beginners</li>
+        <li><strong><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer">freeCodeCamp</a>:</strong> Learn to code for free</li>
       </ul>
 
       <h2>Productivity Tools</h2>
-      <p>Notion (free plan), Trello, Google Workspace for Education.</p>
+      <p>Organize your studies, manage projects, and boost productivity with these free tools.</p>
       <ul>
-        <li><strong>Notion:</strong> All-in-one workspace with free plan</li>
-        <li><strong>Trello:</strong> Project management tool</li>
-        <li><strong>Google Workspace:</strong> Free for educational institutions</li>
-        <li><strong>Evernote:</strong> Note-taking with free tier</li>
-        <li><strong>Todoist:</strong> Task management</li>
+        <li><strong><a href="https://www.notion.so/" target="_blank" rel="noopener noreferrer">Notion</a>:</strong> All-in-one workspace with free plan</li>
+        <li><strong><a href="https://trello.com/" target="_blank" rel="noopener noreferrer">Trello</a>:</strong> Project management tool</li>
+        <li><strong><a href="https://workspace.google.com/intl/en/lp/education/" target="_blank" rel="noopener noreferrer">Google Workspace for Education</a>:</strong> Free for educational institutions</li>
+        <li><strong><a href="https://evernote.com/" target="_blank" rel="noopener noreferrer">Evernote</a>:</strong> Note-taking with free tier</li>
+        <li><strong><a href="https://todoist.com/" target="_blank" rel="noopener noreferrer">Todoist</a>:</strong> Task management</li>
+        <li><strong><a href="https://obsidian.md/" target="_blank" rel="noopener noreferrer">Obsidian</a>:</strong> Knowledge base and note-taking</li>
+        <li><strong><a href="https://www.forestapp.cc/" target="_blank" rel="noopener noreferrer">Forest</a>:</strong> Stay focused and beat procrastination</li>
       </ul>
 
       <h2>Writing and Research</h2>
-      <p>Grammarly (free version), Zotero, Mendeley.</p>
+      <p>Improve your writing and manage research citations efficiently.</p>
       <ul>
-        <li><strong>Grammarly:</strong> Writing assistance</li>
-        <li><strong>Zotero:</strong> Reference management</li>
-        <li><strong>Mendeley:</strong> Research paper organization</li>
-        <li><strong>Hemingway Editor:</strong> Writing style improvement</li>
+        <li><strong><a href="https://www.grammarly.com/" target="_blank" rel="noopener noreferrer">Grammarly</a>:</strong> Writing assistance (free version available)</li>
+        <li><strong><a href="https://www.zotero.org/" target="_blank" rel="noopener noreferrer">Zotero</a>:</strong> Reference management</li>
+        <li><strong><a href="https://www.mendeley.com/" target="_blank" rel="noopener noreferrer">Mendeley</a>:</strong> Research paper organization</li>
+        <li><strong><a href="https://hemingwayapp.com/" target="_blank" rel="noopener noreferrer">Hemingway Editor</a>:</strong> Writing style improvement</li>
+        <li><strong><a href="https://quillbot.com/" target="_blank" rel="noopener noreferrer">QuillBot</a>:</strong> Paraphrasing and summarization tool</li>
+        <li><strong><a href="https://www.scribbr.com/citation/generator/" target="_blank" rel="noopener noreferrer">Scribbr Citation Generator</a>:</strong> Free citation tool</li>
       </ul>
 
       <h2>STEM Resources</h2>
-      <p>Wolfram Alpha, Desmos, PhET Simulations.</p>
+      <p>Essential tools for science, technology, engineering, and mathematics students.</p>
       <ul>
-        <li><strong>Wolfram Alpha:</strong> Computational knowledge engine</li>
-        <li><strong>Desmos:</strong> Graphing calculator</li>
-        <li><strong>PhET Simulations:</strong> Interactive science simulations</li>
-        <li><strong>Khan Academy STEM:</strong> Comprehensive STEM courses</li>
+        <li><strong><a href="https://www.wolframalpha.com/" target="_blank" rel="noopener noreferrer">Wolfram Alpha</a>:</strong> Computational knowledge engine</li>
+        <li><strong><a href="https://www.desmos.com/" target="_blank" rel="noopener noreferrer">Desmos</a>:</strong> Graphing calculator</li>
+        <li><strong><a href="https://phet.colorado.edu/" target="_blank" rel="noopener noreferrer">PhET Simulations</a>:</strong> Interactive science simulations</li>
+        <li><strong><a href="https://www.geogebra.org/" target="_blank" rel="noopener noreferrer">GeoGebra</a>:</strong> Dynamic mathematics software</li>
+        <li><strong><a href="https://www.symbolab.com/" target="_blank" rel="noopener noreferrer">Symbolab</a>:</strong> Step-by-step math solver</li>
+        <li><strong><a href="https://brilliant.org/" target="_blank" rel="noopener noreferrer">Brilliant</a>:</strong> Interactive STEM learning</li>
       </ul>
 
       <h2>Language Learning</h2>
-      <p>Duolingo, Memrise, BBC Languages.</p>
+      <p>Master new languages with these free platforms and apps.</p>
+      <ul>
+        <li><strong><a href="https://www.duolingo.com/" target="_blank" rel="noopener noreferrer">Duolingo</a>:</strong> Gamified language learning</li>
+        <li><strong><a href="https://www.memrise.com/" target="_blank" rel="noopener noreferrer">Memrise</a>:</strong> Learn with native speaker videos</li>
+        <li><strong><a href="https://www.bbc.co.uk/languages/" target="_blank" rel="noopener noreferrer">BBC Languages</a>:</strong> Free language courses</li>
+        <li><strong><a href="https://www.busuu.com/" target="_blank" rel="noopener noreferrer">Busuu</a>:</strong> Social language learning</li>
+        <li><strong><a href="https://www.tandem.net/" target="_blank" rel="noopener noreferrer">Tandem</a>:</strong> Language exchange community</li>
+      </ul>
 
       <h2>Creative Tools</h2>
-      <p>Canva, GIMP, Inkscape.</p>
+      <p>Design, edit, and create without expensive software.</p>
+      <ul>
+        <li><strong><a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">Canva</a>:</strong> Graphic design made easy</li>
+        <li><strong><a href="https://www.gimp.org/" target="_blank" rel="noopener noreferrer">GIMP</a>:</strong> Free image editing software</li>
+        <li><strong><a href="https://inkscape.org/" target="_blank" rel="noopener noreferrer">Inkscape</a>:</strong> Vector graphics editor</li>
+        <li><strong><a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">Figma</a>:</strong> Collaborative design tool (free tier)</li>
+        <li><strong><a href="https://www.audacityteam.org/" target="_blank" rel="noopener noreferrer">Audacity</a>:</strong> Free audio editing</li>
+        <li><strong><a href="https://www.davinciresolve.com/" target="_blank" rel="noopener noreferrer">DaVinci Resolve</a>:</strong> Professional video editing (free version)</li>
+      </ul>
 
       <h2>Conclusion</h2>
-      <p>With these free resources, you can access world-class education and tools without spending money. The key is knowing where to look and how to effectively use these resources to support your learning goals. Start exploring these tools today and take your education to the next level.</p>
+      <p>With these 25+ free resources, you can access world-class education and tools without spending money. The key is knowing where to look and how to effectively use these resources to support your learning goals. Start exploring these tools today and take your education to the next level.</p>
     `,
   }
 ];
