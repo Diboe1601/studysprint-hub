@@ -305,6 +305,7 @@ export const blogPosts: BlogPost[] = [
         <li>Application: Opens annually in September</li>
         <li>Requirements: Academic progress monitoring</li>
       </ul>
+      <p><a href="https://www.nsfas.org.za/content/how-to-apply.html" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for NSFAS →</a></p>
 
       <h2>2. Funza Lushaka Bursary</h2>
       <p>For students pursuing teaching qualifications. Recipients commit to teaching in public schools for the same number of years they received the bursary.</p>
@@ -313,6 +314,7 @@ export const blogPosts: BlogPost[] = [
         <li>Service contract required</li>
         <li>Priority for scarce skills subjects</li>
       </ul>
+      <p><a href="https://www.funzalushaka.doe.gov.za/Home/FirstTime" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Funza Lushaka Bursary →</a></p>
 
       <h2>3. Sasol Bursary Programme</h2>
       <p>Supports students in science, engineering, and commerce fields. Highly competitive but offers comprehensive financial support and work experience opportunities.</p>
@@ -321,6 +323,7 @@ export const blogPosts: BlogPost[] = [
         <li>Includes: Tuition, accommodation, book allowance</li>
         <li>Vacation work and potential employment</li>
       </ul>
+      <p><a href="https://www.sasolbursaries.com/welcome/sasol-foundation-bursaries/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Sasol Bursary →</a></p>
 
       <h2>4. Allan Gray Orbis Foundation</h2>
       <p>Offers bursaries for undergraduate studies in any field at selected universities. Focuses on developing entrepreneurial leaders.</p>
@@ -329,15 +332,19 @@ export const blogPosts: BlogPost[] = [
         <li>Comprehensive leadership development</li>
         <li>Mentorship and networking opportunities</li>
       </ul>
+      <p><a href="https://allangrayorbis.org/programmes/scholarship/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Allan Gray Scholarship →</a></p>
 
       <h2>5. Investec Bursary Programme</h2>
       <p>Targets students in accounting, actuarial science, finance, and IT. Includes vacation work and potential permanent employment.</p>
+      <p><a href="https://www.investec.com/en_za/welcome-to-investec/sustainability/our-community/bursaries.html" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Investec Bursary →</a></p>
 
       <h2>6. Mandela Rhodes Foundation</h2>
       <p>Offers comprehensive scholarships for postgraduate studies to African citizens who demonstrate academic excellence and leadership potential.</p>
+      <p><a href="https://www.mandelarhodes.org/scholarship/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Mandela Rhodes Scholarship →</a></p>
 
       <h2>7. Standard Bank Bursary</h2>
       <p>Supports students in various fields with a focus on transformation and academic excellence.</p>
+      <p><a href="https://www.standardbank.com/sbg/standard-bank-group/careers/early-careers/bursaries" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Standard Bank Bursary →</a></p>
 
       <h2>Application Tips</h2>
       <ul>
