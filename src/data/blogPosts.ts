@@ -291,7 +291,7 @@ export const blogPosts: BlogPost[] = [
     category: "Scholarships",
     image: onlineCoursesImage,
     date: "January 5, 2025",
-    readTime: "11 min read",
+    readTime: "15 min read",
     tags: ["Scholarships", "Financial Aid", "South Africa", "Bursaries"],
     author: "StudySprint Team",
     content: `
@@ -345,6 +345,97 @@ export const blogPosts: BlogPost[] = [
       <h2>7. Standard Bank Bursary</h2>
       <p>Supports students in various fields with a focus on transformation and academic excellence.</p>
       <p><a href="https://www.standardbank.com/sbg/standard-bank-group/careers/early-careers/bursaries" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Standard Bank Bursary →</a></p>
+
+      <h2>8. Anglo American Bursary</h2>
+      <p>One of the leading mining companies offering bursaries for engineering, geology, mining, and related fields. Includes vacation work opportunities.</p>
+      <ul>
+        <li>Fields: Mining Engineering, Metallurgy, Geology, Mechanical Engineering</li>
+        <li>Full tuition and accommodation coverage</li>
+        <li>Vacation work and mentorship programmes</li>
+      </ul>
+      <p><a href="https://www.angloamerican.com/careers/students-and-graduates" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Anglo American Bursary →</a></p>
+
+      <h2>9. Nedbank Bursary Programme</h2>
+      <p>Supports students pursuing degrees in commerce, IT, data science, and related fields. Strong focus on developing future banking professionals.</p>
+      <ul>
+        <li>Fields: BCom Accounting, IT, Data Science, Economics</li>
+        <li>Covers tuition, books, and accommodation</li>
+        <li>Graduate employment opportunities</li>
+      </ul>
+      <p><a href="https://www.nedbank.co.za/content/nedbank/desktop/gt/en/aboutus/about-nedbank-group/careers/students-and-graduates.html" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Nedbank Bursary →</a></p>
+
+      <h2>10. Old Mutual Bursary</h2>
+      <p>Financial services giant offering bursaries for actuarial science, finance, accounting, and IT students with excellent academic records.</p>
+      <ul>
+        <li>Fields: Actuarial Science, Finance, Accounting, Information Technology</li>
+        <li>Comprehensive financial support</li>
+        <li>Work experience during holidays</li>
+      </ul>
+      <p><a href="https://www.oldmutual.co.za/careers/students-graduates/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Old Mutual Bursary →</a></p>
+
+      <h2>11. Eskom Bursary Scheme</h2>
+      <p>South Africa's power utility offers bursaries for engineering and technical fields critical to the energy sector.</p>
+      <ul>
+        <li>Fields: Electrical, Mechanical, Civil Engineering</li>
+        <li>Full-cost bursary with stipend</li>
+        <li>Practical training opportunities</li>
+      </ul>
+      <p><a href="https://www.eskom.co.za/careers/bursaries/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Eskom Bursary →</a></p>
+
+      <h2>12. Transnet Bursary Programme</h2>
+      <p>National freight logistics company supporting students in engineering, logistics, and supply chain management.</p>
+      <ul>
+        <li>Fields: Engineering, Logistics, Supply Chain, Maritime Studies</li>
+        <li>Tuition, accommodation, and book allowance</li>
+        <li>Work-integrated learning</li>
+      </ul>
+      <p><a href="https://www.transnet.net/Careers/Bursaries/Pages/Home.aspx" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Transnet Bursary →</a></p>
+
+      <h2>13. Discovery Bursary</h2>
+      <p>Health and insurance company offering bursaries for actuarial science, data science, and health-related fields.</p>
+      <ul>
+        <li>Fields: Actuarial Science, Data Analytics, Health Sciences, IT</li>
+        <li>Comprehensive bursary package</li>
+        <li>Innovation-focused work environment</li>
+      </ul>
+      <p><a href="https://www.discovery.co.za/corporate/careers-students-and-graduates" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Discovery Bursary →</a></p>
+
+      <h2>14. Shoprite Bursary Programme</h2>
+      <p>Africa's largest retailer offering bursaries for retail management, supply chain, and commerce students.</p>
+      <ul>
+        <li>Fields: Retail Business Management, Supply Chain, BCom</li>
+        <li>Financial support and practical experience</li>
+        <li>Employment opportunities after graduation</li>
+      </ul>
+      <p><a href="https://www.shopriteholdings.co.za/careers/bursaries.html" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Shoprite Bursary →</a></p>
+
+      <h2>15. MTN Foundation Bursary</h2>
+      <p>Telecommunications giant supporting students in IT, engineering, and commerce with a focus on digital innovation.</p>
+      <ul>
+        <li>Fields: IT, Engineering, Commerce, Data Science</li>
+        <li>Full bursary coverage</li>
+        <li>Exposure to telecommunications industry</li>
+      </ul>
+      <p><a href="https://www.mtn.co.za/about-mtn/careers/students-and-graduates" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for MTN Bursary →</a></p>
+
+      <h2>16. Absa Bursary Programme</h2>
+      <p>Major bank offering bursaries for finance, accounting, IT, and data analytics students committed to banking careers.</p>
+      <ul>
+        <li>Fields: Finance, Accounting, IT, Mathematics</li>
+        <li>Tuition and living allowance</li>
+        <li>Graduate programme opportunities</li>
+      </ul>
+      <p><a href="https://www.absa.co.za/about-us/careers/students-and-graduates/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Absa Bursary →</a></p>
+
+      <h2>17. FNB Fund Bursary</h2>
+      <p>First National Bank supports students in various fields with emphasis on innovation and technology.</p>
+      <ul>
+        <li>Fields: IT, Commerce, Engineering, Data Science</li>
+        <li>Comprehensive financial support</li>
+        <li>Innovation hub exposure</li>
+      </ul>
+      <p><a href="https://www.fnb.co.za/about-fnb/careers/students-graduates.html" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for FNB Bursary →</a></p>
+
 
       <h2>Application Tips</h2>
       <ul>
