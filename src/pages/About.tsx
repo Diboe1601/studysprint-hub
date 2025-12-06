@@ -3,8 +3,9 @@ import Footer from "@/components/Footer";
 import ShuffleHero from "@/components/ShuffleHero";
 import { Button } from "@/components/ui/button";
 import { NumberTicker } from "@/components/ui/number-ticker";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
-import { BookOpen, Target, Users, Heart, Award, Clock, TrendingUp, Globe, Star, CheckCircle } from "lucide-react";
+import { BookOpen, Target, Users, Heart, Award, Clock, TrendingUp, Globe, Star, CheckCircle, HelpCircle } from "lucide-react";
 
 const About = () => {
   const teamMembers = [
@@ -260,6 +261,111 @@ const About = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section - SEO Optimized with Schema Markup */}
+      <section className="py-16 bg-muted/50" itemScope itemType="https://schema.org/FAQPage">
+        <div className="container max-w-4xl">
+          <div className="text-center mb-12">
+            <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary mb-4">
+              <HelpCircle className="h-8 w-8" />
+            </div>
+            <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+            <p className="text-lg text-muted-foreground">
+              Find answers to common questions about StudySprint and how we help students succeed
+            </p>
+          </div>
+          
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            <AccordionItem value="item-1" className="border border-border rounded-lg px-6 bg-card" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+              <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                <span itemProp="name">What is StudySprint?</span>
+              </AccordionTrigger>
+              <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                <p itemProp="text" className="text-muted-foreground">
+                  StudySprint is a free educational platform created to help students boost their productivity, develop smarter study habits, and discover valuable learning resources. We offer in-depth blogs, practical guides, and curated tools designed to support your academic journey.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2" className="border border-border rounded-lg px-6 bg-card" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+              <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                <span itemProp="name">Are the study tips and recommendations research-based?</span>
+              </AccordionTrigger>
+              <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                <p itemProp="text" className="text-muted-foreground">
+                  Absolutely. All our content is developed using reliable sources, including insights from cognitive science, guidance from education experts, and proven learning methodologies. We prioritise delivering accurate and practical advice you can trust.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-3" className="border border-border rounded-lg px-6 bg-card" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+              <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                <span itemProp="name">Do I need to register or create an account?</span>
+              </AccordionTrigger>
+              <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                <p itemProp="text" className="text-muted-foreground">
+                  Not at all. Every article, guide, and resource on StudySprint is freely accessible without any sign-up required. Should we introduce features like newsletters or user accounts in the future, participation will always remain entirely optional.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4" className="border border-border rounded-lg px-6 bg-card" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+              <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                <span itemProp="name">Does StudySprint collect personal information?</span>
+              </AccordionTrigger>
+              <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                <p itemProp="text" className="text-muted-foreground">
+                  We collect only essential data such as device information and browsing behaviour through analytics tools like Google Analytics. Personal details, including your email address, are only gathered when you voluntarily provide them. For full details, please review our <Link to="/privacy-policy" className="text-primary hover:underline">Privacy Policy</Link>.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5" className="border border-border rounded-lg px-6 bg-card" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+              <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                <span itemProp="name">Is StudySprint completely free?</span>
+              </AccordionTrigger>
+              <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                <p itemProp="text" className="text-muted-foreground">
+                  Yes, 100%. All our blog posts, study guides, and educational resources are available at no cost. We may display advertisements or include affiliate links to help maintain the platform, but these never influence our honest recommendations.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-6" className="border border-border rounded-lg px-6 bg-card" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+              <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                <span itemProp="name">Do you accept guest posts or partnership requests?</span>
+              </AccordionTrigger>
+              <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                <p itemProp="text" className="text-muted-foreground">
+                  Currently, we do not publish guest contributions. However, we may explore collaboration opportunities in the future. If you have an idea worth discussing, feel free to reach out via <a href="mailto:studysprint-official@gmail.com" className="text-primary hover:underline">studysprint-official@gmail.com</a>.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-7" className="border border-border rounded-lg px-6 bg-card" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+              <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                <span itemProp="name">Can I share StudySprint articles with others?</span>
+              </AccordionTrigger>
+              <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                <p itemProp="text" className="text-muted-foreground">
+                  Of course! You're more than welcome to share links to our content with friends, classmates, or on social media. However, please note that reproducing or copying full articles without prior permission is not permitted.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-8" className="border border-border rounded-lg px-6 bg-card" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+              <AccordionTrigger className="text-left font-semibold hover:no-underline">
+                <span itemProp="name">How can I contact StudySprint?</span>
+              </AccordionTrigger>
+              <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+                <p itemProp="text" className="text-muted-foreground">
+                  We'd love to hear from you! For any questions, feedback, or enquiries, please email us at <a href="mailto:studysprint-official@gmail.com" className="text-primary hover:underline">studysprint-official@gmail.com</a>. We aim to respond as quickly as possible.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 
