@@ -93,7 +93,8 @@ const Footer = () => {
             <h3 className="mb-4 text-sm font-semibold">Connect With Us</h3>
             <div className="flex space-x-4 mb-6">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/stu.dysprint/"
+
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -102,7 +103,7 @@ const Footer = () => {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://facebook.com/studysprint-official"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -111,7 +112,8 @@ const Footer = () => {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://tiktok.com"
+                href="https://www.tiktok.com/@studysprint.official"
+
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"

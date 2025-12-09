@@ -17,14 +17,61 @@ const Contact = () => {
     message: "",
   });
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We'll get back to you soon.",
-    });
-    setFormData({ name: "", email: "", subject: "", message: "" });
+
+    if (isSubmitting) return;
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      toast({
+        title: "Invalid Email",
+        description: "Please enter a valid email address.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      const fd = new FormData();
+      fd.append("access_key", "241996ce-fb33-4152-b0c2-ce3597ea14d3");
+      fd.append("name", formData.name);
+      fd.append("email", formData.email);
+      fd.append("subject", formData.subject);
+      fd.append("message", formData.message);
+
+      const resp = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: fd,
+      });
+
+      const data = await resp.json();
+
+      if (!resp.ok || !data?.success) {
+        console.error("[Contact] web3forms submission error:", { status: resp.status, data });
+        throw new Error("GENERIC_CONTACT_SEND_FAILED");
+      }
+
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for contacting us. We'll get back to you soon.",
+      });
+      setFormData({ name: "", email: "", subject: "", message: "" });
+    } catch (err: unknown) {
+      const detailed = err instanceof Error ? err.message : typeof err === "string" ? err : "Unknown error";
+      console.error("[Contact] send failed:", detailed);
+      toast({
+        title: "Send Failed",
+        description: "We couldn't send your message right now. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -45,7 +92,7 @@ const Contact = () => {
         title="Contact Us"
         description="Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible."
         buttonText="Email Us"
-        buttonLink="mailto:studysprint-official@gmail.com"
+        buttonLink="mailto:studysprint.official24@gmail.com"
       />
 
       {/* Contact Section */}
@@ -149,7 +196,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button type="submit" className="w-full" size="lg">
+                <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
                   <Send className="mr-2 h-4 w-4" />
                   Send Message
                 </Button>
