@@ -106,6 +106,14 @@ const Contact = () => {
                 <p className="text-muted-foreground">
                   Whether you have a question about our content, want to suggest a topic, or just want to say hello, we're here to help.
                 </p>
+                <div className="space-y-4 text-base leading-relaxed text-muted-foreground mt-6">
+                  <p>
+                    You’re welcome to contact us if you need clarity on a bursary requirement, want practical study resources, spotted an error, or have a topic you’d like us to cover. We also love hearing what’s working (and what isn’t) in your study routine—your stories help us make better guides. If you represent a school, NGO, or company, we’re open to partnerships that genuinely help students, from scholarship drives to workshops and verified student discounts.
+                  </p>
+                  <p>
+                    When you write to us, expect a thoughtful, human reply. We aim to respond within 24–48 hours on weekdays. For time‑sensitive application questions, we’ll share clear next steps and credible sources. We can’t file applications or offer legal advice, but we do provide checklists, templates, and practical guidance so you can move forward confidently. If your question needs deeper research, we’ll acknowledge it and follow up with a realistic timeline. For faster help, include your deadline, relevant links, and what you’ve tried so far.
+                  </p>
+                </div>
               </div>
 
               <div className="space-y-6">

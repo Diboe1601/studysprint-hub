@@ -298,157 +298,105 @@ export const blogPosts: BlogPost[] = [
   tags: ["Scholarships", "Bursaries", "Financial Aid", "South Africa", "Student Funding", "NSFAS", "University"],
   author: "StudySprint Team",
   content: `
-    <p>Worried about university fees? You're not alone. Every year, thousands of South African students secure funding through scholarships and bursaries. With the right information and preparation, you can join them. This comprehensive guide covers 17 top opportunities, plus insider strategies to make your application stand out.</p>
+    <p>Worried about university fees? You’re not alone. Every year, thousands of South African students secure funding through scholarships and bursaries—and with the right preparation, you can join them. The process can feel confusing at first: different deadlines, eligibility rules, and documents. This guide cuts through the noise and gives you a practical path from “where do I even start?” to hitting submit with confidence.</p>
 
-    <p><strong>Pro Tip:</strong> Start your scholarship search at least 12 months before your studies begin. Many deadlines fall between June and September for the following academic year.</p>
-
-    <h2>Understanding the Funding Landscape</h2>
-    <p>South Africa offers three main types of financial support:</p>
-    <ul>
-      <li><strong>Government Bursaries:</strong> NSFAS, Funza Lushaka – based on financial need and academic merit</li>
-      <li><strong>Corporate Bursaries:</strong> Sasol, Investec, Standard Bank – often include work-back agreements</li>
-      <li><strong>Foundation Scholarships:</strong> Mandela Rhodes, Allan Gray – focus on leadership and potential</li>
-    </ul>
-
-    <h2>Government-Funded Opportunities</h2>
-
-    <h3>1. National Student Financial Aid Scheme (NSFAS)</h3>
-    <p>The cornerstone of government support for students from low-income households. NSFAS covers comprehensive costs for qualifying students.</p>
-    <p><strong>Eligibility:</strong> South African citizens with combined household income under R350,000/year</p>
-    <p><strong>Covers:</strong> Full tuition, accommodation, meals, transport allowance, and learning materials</p>
-    <p><strong>Application Window:</strong> September to November annually</p>
-    <p><strong>Key Requirement:</strong> Maintain satisfactory academic progress (typically 50%+ pass rate)</p>
-    <p><a href="https://www.nsfas.org.za/content/how-to-apply.html" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for NSFAS →</a></p>
-
-    <h3>2. Funza Lushaka Bursary Programme</h3>
-    <p>Investing in South Africa's future educators. This full-cost bursary supports teaching qualifications with a service commitment.</p>
-    <p><strong>Fields:</strong> Foundation Phase, Intermediate Phase, Senior Phase, and FET teaching</p>
-    <p><strong>Priority Areas:</strong> Mathematics, Physical Science, Technology, African Languages</p>
-    <p><strong>Service Agreement:</strong> Teach one year for each year of funding received</p>
-    <p><strong>Additional Support:</strong> Mentorship and teaching practice assistance</p>
-    <p><a href="https://www.funzalushaka.doe.gov.za/Home/FirstTime" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Funza Lushaka Bursary →</a></p>
-
-    <h2>Corporate Bursary Programmes</h2>
-
-    <h3>3. Sasol Bursary Programme</h3>
-    <p>A gateway to South Africa's energy and chemicals sector. Sasol offers comprehensive support with practical work experience.</p>
-    <p><strong>Fields:</strong> Chemical Engineering, Mechanical Engineering, Data Science, Accounting</p>
-    <p><strong>Package Includes:</strong> Tuition, residence fees, book allowance, and monthly stipend</p>
-    <p><strong>Work Experience:</strong> Compulsory vacation work and potential graduate employment</p>
-    <p><strong>Competitiveness:</strong> Extremely high – require 70%+ academic average</p>
-    <p><a href="https://www.sasolbursaries.com/welcome/sasol-foundation-bursaries/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Sasol Bursary →</a></p>
-
-    <h3>4. Investec Bursary Programme</h3>
-    <p>Shaping future financial leaders. Investec targets high-achieving students in finance-related fields.</p>
-    <p><strong>Fields:</strong> Chartered Accounting, Actuarial Science, Information Technology, Finance</p>
-    <p><strong>Unique Features:</strong> Leadership development, networking events, and career mentoring</p>
-    <p><strong>Selection Criteria:</strong> Academic excellence (75%+), financial need, and leadership potential</p>
-    <p><a href="https://www.investec.com/en_za/welcome-to-investec/sustainability/our-community/bursaries.html" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Investec Bursary →</a></p>
-
-    <h2>Banking & Financial Sector Bursaries</h2>
-
-    <h3>5. Standard Bank Bursary</h3>
-    <p>Committed to developing diverse talent for Africa's banking future.</p>
-    <p><strong>Fields:</strong> IT, Data Analytics, Finance, Economics, Marketing</p>
-    <p><strong>Focus:</strong> Transformation, academic excellence, and digital innovation</p>
-    <p><strong>Opportunities:</strong> Vacation work, graduate programmes, and international exposure</p>
-    <p><a href="https://www.standardbank.com/sbg/standard-bank-group/careers/early-careers/bursaries" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Standard Bank Bursary →</a></p>
-
-    <h3>6. Absa Bursary Programme</h3>
-    <p>Building Africa's next generation of banking professionals.</p>
-    <p><strong>Fields:</strong> Finance, Accounting, IT, Mathematics, Statistics</p>
-    <p><strong>Support Package:</strong> Tuition, accommodation, meal allowance, and laptop</p>
-    <p><strong>Career Pathway:</strong> Priority consideration for Absa graduate programmes</p>
-    <p><a href="https://www.absa.co.za/about-us/careers/students-and-graduates/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Absa Bursary →</a></p>
-
-    <p><strong>Did You Know?</strong> Many corporate bursaries convert to permanent employment offers upon graduation. They're not just funding – they're career launchpads.</p>
-
-    <h2>Engineering & Technical Fields</h2>
-
-    <h3>7. Anglo American Bursary</h3>
-    <p>Leading the way in mining innovation and sustainable resource development.</p>
-    <p><strong>Fields:</strong> Mining Engineering, Geology, Metallurgy, Environmental Science</p>
-    <p><strong>Includes:</strong> Full tuition, accommodation, book allowance, and mentorship</p>
-    <p><strong>Practical Experience:</strong> Structured vacation work at Anglo American operations</p>
-    <p><strong>Global Opportunities:</strong> Potential for international exposure and training</p>
-    <p><a href="https://www.angloamerican.com/careers/students-and-graduates" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Anglo American Bursary →</a></p>
-
-    <h3>8. Eskom Bursary Scheme</h3>
-    <p>Powering South Africa's energy future through education and skills development.</p>
-    <p><strong>Fields:</strong> Electrical Engineering, Mechanical Engineering, Nuclear Physics</p>
-    <p><strong>Critical Skills:</strong> Focus on disciplines essential for energy security</p>
-    <p><strong>Benefits:</strong> Monthly stipend, paid vacation work, and guaranteed employment</p>
-    <p><a href="https://www.eskom.co.za/careers/bursaries/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Eskom Bursary →</a></p>
-
-    <h2>Leadership & Entrepreneurship Scholarships</h2>
-
-    <h3>9. Mandela Rhodes Foundation Scholarship</h3>
-    <p>Africa's premier postgraduate scholarship developing ethical leadership across the continent.</p>
-    <p><strong>Level:</strong> Honours and Masters degrees</p>
-    <p><strong>Selection Criteria:</strong> Academic excellence, leadership potential, reconciliation, and entrepreneurship</p>
-    <p><strong>Programme:</strong> Leadership development, mentoring, and networking opportunities</p>
-    <p><strong>Prestige:</strong> One of Africa's most competitive and respected scholarships</p>
-    <p><a href="https://www.mandelarhodes.org/scholarship/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Mandela Rhodes Scholarship →</a></p>
-
-    <h3>10. Allan Gray Orbis Foundation</h3>
-    <p>Cultivating South Africa's next generation of entrepreneurial leaders.</p>
-    <p><strong>Eligibility:</strong> Grade 12 learners and 1st-year university students</p>
-    <p><strong>Focus:</strong> Entrepreneurial mindset, regardless of field of study</p>
-    <p><strong>Support:</strong> Full tuition, monthly allowance, laptop, and entrepreneurial development</p>
-    <p><strong>Network:</strong> Access to mentors, entrepreneurs, and like-minded peers</p>
-    <p><a href="https://allangrayorbis.org/programmes/scholarship/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Allan Gray Scholarship →</a></p>
-
-    <h2>Additional Notable Opportunities</h2>
-
-    <h3>11. Nedbank Bursary</h3>
-    <p>Nedbank supports students who want to build careers in finance and technology. Their bursary focuses on learners with strong academic performance and a passion for future-focused careers.</p>
-    <p><strong>Fields:</strong> BCom Accounting, IT, Data Science</p>
-    <p><strong>Highlights:</strong> Covers tuition and provides added academic support for qualifying students</p>
-    <p><a href="https://www.nedbank.co.za/content/nedbank/desktop/gt/en/aboutus/about-nedbank-group/careers/students-and-graduates.html" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Nedbank Bursary →</a></p>
-
-    <h3>12. Old Mutual Bursary</h3>
-    <p>Old Mutual invests heavily in students who show strong analytical skills and potential to grow in the financial services industry.</p>
-    <p><strong>Fields:</strong> Actuarial Science, Finance, IT</p>
-    <p><strong>Highlights:</strong> Offers mentorship, vacation work, and potential graduate opportunities</p>
-    <p><a href="https://www.oldmutual.co.za/careers/students-graduates/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Old Mutual Bursary →</a></p>
-
-    <h3>13. Transnet Bursary</h3>
-    <p>Transnet funds students who are passionate about building South Africa’s transport and logistics sector.</p>
-    <p><strong>Fields:</strong> Engineering, Logistics, Supply Chain</p>
-    <p><strong>Highlights:</strong> Includes practical training and work exposure at Transnet facilities</p>
-    <p><a href="https://www.transnet.net/Careers/Bursaries/Pages/Home.aspx" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Transnet Bursary →</a></p>
-
-    <h3>14. Discovery Bursary</h3>
-    <p>Discovery supports talented students who want to pursue careers in health sciences and technology-driven fields.</p>
-    <p><strong>Fields:</strong> Actuarial Science, Data Analytics, Health Sciences</p>
-    <p><strong>Highlights:</strong> Strong focus on innovation, wellness, and leadership development</p>
-    <p><a href="https://www.discovery.co.za/corporate/careers-students-and-graduates" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Discovery Bursary →</a></p>
-
-    <h3>15. Shoprite Bursary</h3>
-    <p>Shoprite supports students who want to grow within South Africa’s fast-paced retail and supply chain sectors.</p>
-    <p><strong>Fields:</strong> Retail Management, Supply Chain, Commerce</p>
-    <p><strong>Highlights:</strong> Offers guaranteed job placement for top-performing bursary recipients</p>
-    <p><a href="https://www.shopriteholdings.co.za/careers/bursaries.html" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for Shoprite Bursary →</a></p>
-
-    <h3>16. MTN Foundation Bursary</h3>
-    <p>The MTN Foundation supports students pursuing careers that align with South Africa’s digital future.</p>
-    <p><strong>Fields:</strong> IT, Engineering, Commerce, Data Science</p>
-    <p><strong>Highlights:</strong> Provides mentorship and opportunities to join MTN’s graduate programmes</p>
-    <p><a href="https://www.mtn.co.za/about-mtn/careers/students-and-graduates" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for MTN Bursary →</a></p>
-
-    <h3>17. FNB Fund Bursary</h3>
-    <p>FNB invests in students who demonstrate strong academic potential and interest in innovation-driven careers.</p>
-    <p><strong>Fields:</strong> IT, Commerce, Engineering, Data Science</p>
-    <p><strong>Highlights:</strong> Strong emphasis on digital skills and future-focused learning</p>
-    <p><a href="https://www.fnb.co.za/about-fnb/careers/students-graduates.html" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Apply for FNB Bursary →</a></p>
+    <p>Below is your Scholarship Application Playbook—tested steps, timelines, checklists, and simple ways to stand out. You’ll also find common myths (and fixes), interview guidance, a short example motivation paragraph, and an action plan you can start today. Bookmark this page, take notes, and work steadily. You only need one “yes.”</p>
 
     <h2>Your Scholarship Application Playbook</h2>
-    <h3>Timeline Strategy</h3> <ul> <li><strong>12-18 months before:</strong> Research opportunities and requirements</li> <li><strong>9-12 months before:</strong> Prepare documents (ID, transcripts, proof of income)</li> <li><strong>6-9 months before:</strong> Write and refine motivation letters</li> <li><strong>3-6 months before:</strong> Submit applications (most deadlines are here)</li> <li><strong>1-3 months before:</strong> Prepare for interviews and assessments</li> </ul> <h3>Document Checklist</h3> <ul> <li>Certified copy of your ID document</li> <li>Latest academic transcripts</li> <li>Proof of parents'/guardians' income</li> <li>Motivation letter (tailored for each application)</li> <li>Curriculum Vitae (CV)</li> <li>Reference letters from teachers/professors</li> <li>Proof of university acceptance (if available)</li> </ul> <h3>Crafting a Winning Motivation Letter</h3> <p>Your motivation letter is your chance to tell your story. Structure it with:</p> <ol> <li><strong>Introduction:</strong> Who you are and what you're applying for</li> <li><strong>Academic Journey:</strong> Key achievements and challenges overcome</li> <li><strong>Future Goals:</strong> How this scholarship fits your career path</li> <li><strong>Alignment:</strong> Why you and this opportunity are a perfect match</li> <li><strong>Conclusion:</strong> Thank you and commitment statement</li> </ol> <p><strong>Golden Rule:</strong> Never submit a generic motivation letter. Research each organization's values and mention specific projects or initiatives that inspire you.</p> <h3>Interview Preparation</h3> <ul> <li>Research the organization's history, values, and recent projects</li> <li>Prepare 2-3 thoughtful questions to ask your interviewers</li> <li>Practice common questions with a friend or family member</li> <li>Prepare examples of leadership, teamwork, and problem-solving</li> <li>Dress professionally and test your technology beforehand</li> </ul> <h2> Beyond This List: Finding Hidden Opportunities</h2> <ul> <li><strong>University Financial Aid Offices:</strong> Often have institution-specific scholarships</li> <li><strong>Professional Associations:</strong> Engineering Council SA, SAICA for accountants, etc.</li> <li><strong>Local Municipalities:</strong> Many offer bursaries for local students</li> <li><strong>International Opportunities:</strong> Commonwealth Scholarships, DAAD (Germany), Chevening (UK)</li> <li><strong>Online Databases:</strong> bursaries-southafrica.co.za, careerhelp.org.za</li> </ul> <h3>Real Student Success Story</h3> <p>"I applied to 14 different bursaries in my matric year. Got rejected by 12, waitlisted by 1, and accepted by 1. That one acceptance funded my entire chemical engineering degree and led to a graduate job at Sasol. Persistence pays off." - Thando, University of Pretoria Graduate</p> <h2> Common Pitfalls to Avoid</h2> <ul> <li>Missing application deadlines (set multiple reminders!)</li> <li>Submitting incomplete applications</li> <li>Using the same motivation letter for every application</li> <li>Not following up on application status</li> <li>Giving up after one or two rejections</li> 
-    </ul> <h2> Final Words of Encouragement</h2> <p>The scholarship journey requires effort, but the reward is transformative. Every successful applicant started exactly where you are now. Remember:</p> <ul> <li>Your background and challenges can be strengths in your story</li> <li>Each rejection teaches you something for the next application</li> <li>Small, consistent efforts compound into success</li> <li>You only need one "yes" to change your educational trajectory</li> </ul> <h3>Ready to Take Action?</h3> <p>1. Bookmark this page for reference<br> 2. Create a spreadsheet to track applications<br> 3. Set aside 30 minutes this week to start your first application<br> 4. Join our community for support and motivation</p> <p><strong>Your education is worth fighting for. Start today.</strong></p> <p><em>Note: Application details and deadlines change annually. Always verify information on official websites before applying. This guide was accurate as of January 2025.</em></p>
-    ...
+    <h3>Timeline Strategy</h3>
+    <ul>
+      <li><strong>12–18 months before:</strong> Research broadly—government (NSFAS), private companies (Sasol, Investec, Anglo), foundations (Mandela Rhodes, Allan Gray), and your target universities’ financial aid and departmental awards. Start a spreadsheet to track name, link, requirements, deadlines, and contact emails.</li>
+      <li><strong>9–12 months before:</strong> Gather core documents: certified ID, latest academic transcripts, proof of household income, reference letters, a clean CV. Keep digital copies (PDF) and physical copies in one folder. Request letters early.</li>
+      <li><strong>6–9 months before:</strong> Draft motivation letters. Create a master version with your story, then tailor to each bursary’s values. Ask a teacher or mentor to review. Build a habit of weekly refinement.</li>
+      <li><strong>3–6 months before:</strong> Submit applications. Most deadlines cluster here. Set calendar reminders and buffer two weeks for unexpected delays.</li>
+      <li><strong>1–3 months before:</strong> Prepare for interviews and assessments. Practice your introduction, know your grades and goals, and review relevant projects.</li>
+    </ul>
+
+    <h3>Document Checklist</h3>
+    <ul>
+      <li>Certified copy of your ID document</li>
+      <li>Latest academic transcripts or report cards</li>
+      <li>Proof of parents’/guardians’ income (payslips or sworn affidavits)</li>
+      <li>Motivation letter tailored for the specific bursary</li>
+      <li>Curriculum Vitae (CV) with achievements and responsibilities</li>
+      <li>Two reference letters (teacher/lecturer/community leader)</li>
+      <li>Proof of university acceptance (if available)</li>
+      <li>Any required forms or online portal submissions</li>
+    </ul>
+
+    <h3>Crafting a Winning Motivation Letter</h3>
+    <p>Your motivation letter is your chance to tell a focused, honest story. Use a clear structure:</p>
+    <ol>
+      <li><strong>Introduction:</strong> Who you are, what you’re applying for, your intended course and institution.</li>
+      <li><strong>Academic Journey:</strong> Key achievements and challenges you’ve overcome (be specific—show growth, not perfection).</li>
+      <li><strong>Alignment:</strong> Why the organisation’s mission resonates with you. Reference values, community work, or projects that connect.</li>
+      <li><strong>Future Goals:</strong> The impact you want to make and how the funding enables it.</li>
+      <li><strong>Conclusion:</strong> Gratitude, commitment to perform, and openness to interviews.</li>
+    </ol>
+    <p><strong>Golden rule:</strong> Never submit a generic letter. Mention the organisation by name and include one concrete detail about their initiatives that inspires you.</p>
+
+    <h4>Sample paragraph (adapt for your story)</h4>
+    <p>“Growing up in Limpopo, I saw how unreliable transport affects healthcare access in rural areas. Studying Mechanical Engineering at UJ will help me design affordable mobility solutions for clinics. Your bursary’s focus on practical training and mentorship aligns with my plan to prototype a low‑cost modular transport unit with local manufacturers. I’m committed to using this opportunity to serve communities like mine.”</p>
+
+    <h3>Interview Preparation</h3>
+    <ul>
+      <li>Know the organisation’s values and recent projects. Prepare two thoughtful questions to ask.</li>
+      <li>Practice common questions: “Tell us about yourself,” “Describe a challenge you overcame,” “Why this field?”</li>
+      <li>Use the STAR method (Situation, Task, Action, Result) for examples of leadership, teamwork, and problem‑solving.</li>
+      <li>Dress neatly, arrive early (or test your tech beforehand for virtual interviews), and bring printed copies of your documents.</li>
+      <li>Follow up with a brief thank‑you email summarising your interest and fit.</li>
+    </ul>
+
+    <h2>Eligibility Myths (and the Reality)</h2>
+    <ul>
+      <li><strong>Myth:</strong> “If I’m not top of my class, I shouldn’t apply.” <br><strong>Reality:</strong> Many bursaries value potential, grit, and alignment with their mission. Strong motivation + consistent improvement can win.</li>
+      <li><strong>Myth:</strong> “NSFAS is the only option.” <br><strong>Reality:</strong> NSFAS is vital, but private sector, municipalities, professional bodies, and university departments offer thousands of opportunities.</li>
+      <li><strong>Myth:</strong> “I must have university acceptance first.” <br><strong>Reality:</strong> Some programmes accept provisional applications while you await placement—check details carefully.</li>
+      <li><strong>Myth:</strong> “Generic letters save time.” <br><strong>Reality:</strong> Tailoring is non‑negotiable. Referencing specific values or projects signals genuine fit.</li>
+    </ul>
+
+    <h2>Beyond This List: Finding Hidden Opportunities</h2>
+    <ul>
+      <li><strong>University Financial Aid Offices:</strong> Look for departmental awards, merit bursaries, and need‑based grants specific to your institution.</li>
+      <li><strong>Professional Associations:</strong> SAICA (accounting), ECSA (engineering), SACNASP (science), and others often promote funding.</li>
+      <li><strong>Local Municipalities:</strong> Many offer bursaries to residents—check your municipality’s website.</li>
+      <li><strong>International Opportunities:</strong> Commonwealth Scholarships, DAAD (Germany), Chevening (UK) for postgraduate pathways.</li>
+      <li><strong>Online Databases:</strong> Verify details on official sites, but use aggregators to discover options faster.</li>
+    </ul>
+
+    <h2>Common Pitfalls to Avoid</h2>
+    <ul>
+      <li>Missing deadlines—set reminders and aim to submit one week early.</li>
+      <li>Incomplete applications—double‑check requirements and file names before upload.</li>
+      <li>Generic motivation letters—adapt each one, even if 70% stays the same.</li>
+      <li>No follow‑up—politely email for status after the published decision window.</li>
+      <li>Giving up too soon—rejections teach you what to refine next time.</li>
+    </ul>
+
+    <h2>Quick FAQ</h2>
+    <ul>
+      <li><strong>What average do I need?</strong> It depends. Many competitive programmes seek ~70–75%+, but need‑based schemes focus on potential and progression.</li>
+      <li><strong>Can I hold multiple bursaries?</strong> Sometimes no—check each programme’s rules. You may need to choose one.</li>
+      <li><strong>Do I have to work for the company afterwards?</strong> Some include service contracts (e.g., Funza Lushaka, corporate bursaries). Read terms carefully.</li>
+      <li><strong>How do I get strong references?</strong> Ask early, provide your CV and a short summary of achievements, and remind your referee of deadlines.</li>
+      <li><strong>Is NSFAS enough?</strong> For many students, yes—it covers core study costs. But private bursaries can add mentorship, stipends, and work experience.</li>
+    </ul>
+
+    <h2>Action Plan (Start This Week)</h2>
+    <ol>
+      <li>Create a simple spreadsheet: bursary name, link, deadline, requirements, status, contact.</li>
+      <li>Draft your master motivation letter and highlight 3 values you bring (initiative, resilience, community impact).</li>
+      <li>Request two reference letters and collect all official documents. Scan them clearly.</li>
+      <li>Choose 3 bursaries that match your field and income/grade profile. Submit one within two weeks.</li>
+      <li>Schedule 30 minutes twice a week to refine applications and check for new opportunities.</li>
+    </ol>
+
+    <h2>Final Words of Encouragement</h2>
+    <p>The scholarship journey requires effort, but the reward is transformative. Every successful applicant started where you are now—unsure, hopeful, and willing to try. Keep your applications organised, improve each draft, and ask for help when you need it. Small, consistent actions compound. You only need one “yes” to change your educational trajectory.</p>
+
+    <p><em>Note: Application details and deadlines change annually. Always verify information on official websites before applying. This guide is current as of January 2026.</em></p>
   `,
-}
-,
+},
   {
     id: "productivity-hacks",
     title: "10 Productivity Hacks Every Student Should Know",

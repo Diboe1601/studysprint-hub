@@ -287,6 +287,89 @@ const Index = () => {
         </div>
       </section>
 
+      {/* What is StudySprint? */}
+      <section className="py-16 bg-white" aria-label="What is StudySprint?">
+        <div className="container max-w-4xl">
+          <h2 className="text-3xl font-bold mb-6">What is StudySprint?</h2>
+          <div className="space-y-4 text-muted-foreground">
+            <p>
+              StudySprint is a student-first learning hub that helps you study smarter, plan better, and make informed choices about your education. We publish practical, research-informed guides, bursary and scholarship advice, honest app and tool reviews, and downloadable templates that turn good intentions into consistent progress. Whether you’re preparing for exams, choosing resources, or applying for funding, StudySprint gives you clear, actionable content—no fluff, no gatekeeping.
+            </p>
+            <p>
+              Built for high school learners, university and TVET students, and postgraduate candidates, our content prioritises the South African context while remaining useful to students globally. We solve common problems students face: information overload, conflicting advice, and low-quality recommendations that waste time and money. Instead, we help you focus on methods that work, tools that add real value, and bursaries you can realistically qualify for. Our approach is trustworthy because we follow clear editorial standards, cite credible sources where relevant, keep recommendations independent (no pay-to-play), and regularly update our content to reflect changes in applications, platforms, and policies. If we recommend something, it’s because it can genuinely improve your study outcomes, reduce stress, and help you build momentum.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* What You’ll Find on StudySprint */}
+      <section className="py-16 bg-accent/5" aria-label="What you’ll find on StudySprint">
+        <div className="container max-w-5xl">
+          <h2 className="text-3xl font-bold mb-6">What You’ll Find on StudySprint</h2>
+          <p className="text-muted-foreground mb-8 max-w-3xl">
+            We organise everything you need to study effectively and navigate your academic journey—from daily habits to big decisions about courses, tools, and funding. Start with our guides, then use our templates and recommendations to build a system that works for you.
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="flex items-start gap-3 p-4 rounded-lg border bg-card">
+              <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
+              <div>
+                <h3 className="font-semibold">Step-by-Step Study Guides</h3>
+                <p className="text-sm text-muted-foreground">Active recall, spaced repetition, Pomodoro, and exam strategies that actually work.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-4 rounded-lg border bg-card">
+              <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
+              <div>
+                <h3 className="font-semibold">Bursary & Scholarship Advice</h3>
+                <p className="text-sm text-muted-foreground">South Africa-focused with global opportunities; eligibility, timelines, and application tips.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-4 rounded-lg border bg-card">
+              <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
+              <div>
+                <h3 className="font-semibold">Honest App & Tool Reviews</h3>
+                <p className="text-sm text-muted-foreground">Productivity, note-taking, flashcards, and study planners—tested and compared.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-4 rounded-lg border bg-card">
+              <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
+              <div>
+                <h3 className="font-semibold">Curated Online Courses</h3>
+                <p className="text-sm text-muted-foreground">Top platforms and pathways for skill-building and academic support.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-4 rounded-lg border bg-card">
+              <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
+              <div>
+                <h3 className="font-semibold">Downloadable Templates</h3>
+                <p className="text-sm text-muted-foreground">Study planners, time-blocking sheets, revision schedules, and grade trackers.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-4 rounded-lg border bg-card">
+              <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
+              <div>
+                <h3 className="font-semibold">University & Career Readiness</h3>
+                <p className="text-sm text-muted-foreground">Personal statements, interview prep, and decision frameworks for next steps.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-4 rounded-lg border bg-card">
+              <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
+              <div>
+                <h3 className="font-semibold">Productivity Systems for Students</h3>
+                <p className="text-sm text-muted-foreground">Time-blocking, habit tracking, and routines that reduce stress and increase focus.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-4 rounded-lg border bg-card">
+              <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
+              <div>
+                <h3 className="font-semibold">Community Insights</h3>
+                <p className="text-sm text-muted-foreground">Real experiences, proven tips, and success stories from fellow students.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Features Section */}
       <section className="py-16 bg-white" aria-label="Our features">
         <div className="container">
