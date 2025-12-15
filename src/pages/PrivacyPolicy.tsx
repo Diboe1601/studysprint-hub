@@ -1,17 +1,12 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import ShuffleHero from "@/components/ShuffleHero";
 
 const PrivacyPolicy = () => {
   return (
     <div className="flex min-h-screen flex-col">
       <Navigation />
 
-      <ShuffleHero
-        badge="🔒 Your Privacy Matters"
-        title="Privacy Policy"
-        description="Last updated: January 2025. Learn how we protect and handle your personal information."
-      />
+      {/* Hero section removed */}
 
       <main className="flex-1">
         <div className="container max-w-4xl py-16">
