@@ -103,29 +103,7 @@ export const blogPosts: BlogPost[] = [
     content: `
       <p>Choosing between Coursera and Udemy can be challenging. Both platforms offer thousands of courses, but they serve different learning needs and styles. This comprehensive comparison will help you decide which platform is the best fit for your goals.</p>
 
-      <h2>Coursera: Academic Excellence and Certificates</h2>
-      <p>Coursera partners with top universities and companies to offer structured, academic-style courses. Key features include:</p>
-      <ul>
-        <li>Courses from prestigious universities like Yale, Stanford, and Princeton</li>
-        <li>Accredited certificates and degree programs</li>
-        <li>Structured learning paths with deadlines</li>
-        <li>Peer-reviewed assignments</li>
-        <li>Financial aid available</li>
-        <li>University credit for some courses</li>
-        <p><a href="https://www.coursera.org/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Check out Coursera Courses →</a></p>
-      </ul>
-
-      <h2>Udemy: Practical Skills and Flexibility</h2>
-      <p>Udemy focuses on practical, skill-based learning with maximum flexibility. Highlights include:</p>
-      <ul>
-        <li>Lifetime access to purchased courses</li>
-        <li>Frequent sales and discounts</li>
-        <li>Wide variety of niche topics</li>
-        <li>Learn at your own pace</li>
-        <li>No prerequisites required</li>
-        <li>Direct instructor access</li>
-        <p><a href="https://www.udemy.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Check out Udemy Courses →</a></p>
-      </ul>
+      <!-- Removed per request: detailed Coursera/Udemy infos that duplicate cards -->
 
       <h2>Course Quality and Instructors</h2>
       <p><strong>Coursera:</strong> Courses are developed by universities and industry experts, ensuring high academic standards and consistent quality.</p>
