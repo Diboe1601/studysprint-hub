@@ -38,7 +38,7 @@ const BlogPost = () => {
         "Priority: Mathematics, Physical Science, Technology, African Languages",
         "Service Agreement: Teach one year for each funded year",
         "Support: Mentorship and teaching practice assistance",
-      ],
+      },
       applyUrl: "https://www.funzalushaka.doe.gov.za/Home/FirstTime",
     },
     {
@@ -186,6 +186,42 @@ const BlogPost = () => {
     },
   ] : null;
 
+  // Platform cards for Coursera vs Udemy post
+  const platformCards = post?.id === "coursera-vs-udemy" ? [
+    {
+      title: "Coursera: Academic Excellence & Certificates",
+      blurb: "University-backed courses, structured learning paths, and recognised certificates.",
+      details: [
+        "Partners: Top universities (e.g., Stanford, Michigan) and industry leaders",
+        "Structure: Guided specialisations with graded assignments and peer review",
+        "Certificates: Shareable certificates; some offer credit/degree pathways",
+        "Best for: Formal learning, career pivots into data, business, and tech",
+        "Learning model: Weekly modules, graded quizzes, capstone projects",
+        "Support: Discussion forums, peer review, occasional mentor feedback",
+        "Costs: Single courses ($49–$99), specialisations ($39–$79/month), degrees vary",
+        "Financial aid: Available on many programmes",
+        "Recognition: University-backed certificates with higher signalling value",
+      ],
+      officialUrl: "https://www.coursera.org/",
+    },
+    {
+      title: "Udemy: Practical Skills & Flexibility",
+      blurb: "Hands-on, project-focused courses with flexible pacing across thousands of topics.",
+      details: [
+        "Library: Massive catalog with many niche and practical skill courses",
+        "Learning: Self-paced, lifetime access; learn in short sprints",
+        "Instructors: Individual experts; quality varies—check ratings and previews",
+        "Best for: Rapid upskilling, specific tools (e.g., Excel, Python, Figma)",
+        "Practice: Project-based lessons and downloadable resources",
+        "Pacing: Watch anytime; pause/rewind; revisit after months",
+        "Costs: Frequent sales bring most courses to $10–$20",
+        "Selection tips: Use previews, ratings, and recent reviews",
+        "Recognition: Certificates of completion; portfolio-proof matters more",
+      ],
+      officialUrl: "https://www.udemy.com/",
+    },
+  ] : null;
+
   if (!post) {
     return <Navigate to="/blog" replace />;
   }
@@ -247,6 +283,41 @@ const BlogPost = () => {
                       </Button>
                       <Button asChild variant="secondary" size="sm">
                         <a href={b.applyUrl} target="_blank" rel="noopener noreferrer">Apply</a>
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {platformCards && (
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold mb-6">Platform Highlights</h2>
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
+                {platformCards.map((p) => (
+                  <Card key={p.title} className="h-full">
+                    <CardHeader>
+                      <h3 className="text-lg font-semibold">
+                        <Link to={`/platform/${p.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}`} className="hover:underline">
+                          {p.title}
+                        </Link>
+                      </h3>
+                      <p className="text-sm text-muted-foreground">{p.blurb}</p>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="list-disc pl-5 text-sm space-y-2">
+                        {p.details.map((d) => (
+                          <li key={d}>{d}</li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                    <CardFooter className="gap-2">
+                      <Button asChild variant="outline" size="sm">
+                        <Link to={`/platform/${p.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}`}>View details</Link>
+                      </Button>
+                      <Button asChild variant="secondary" size="sm">
+                        <a href={p.officialUrl} target="_blank" rel="noopener noreferrer">Visit site</a>
                       </Button>
                     </CardFooter>
                   </Card>
