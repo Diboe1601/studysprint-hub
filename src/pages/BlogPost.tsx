@@ -38,7 +38,7 @@ const BlogPost = () => {
         "Priority: Mathematics, Physical Science, Technology, African Languages",
         "Service Agreement: Teach one year for each funded year",
         "Support: Mentorship and teaching practice assistance",
-      },
+      ],
       applyUrl: "https://www.funzalushaka.doe.gov.za/Home/FirstTime",
     },
     {
