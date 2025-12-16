@@ -647,91 +647,25 @@ export const blogPosts: BlogPost[] = [
     tags: ["Free Resources", "Budget Learning", "Tools", "Student Resources"],
     author: "Sello Mpho",
     content: `
-      <p>Quality education doesn't have to be expensive. Here are incredible free resources for students that can support your learning journey without straining your budget.</p>
+      <h2>Overview</h2>
+      <p>Quality education doesn't have to be expensive. In fact, many of the best tools that students rely on every day are completely free. Whether you're researching sources for an assignment, learning a new skill, organising your study life, or polishing your writing, you can build a full academic workflow without paying a cent. The key is knowing what to use, when to use it, and how to integrate these tools so they reinforce each other. This overview gives you a clear path to using free resources effectively, sustainably, and confidently.</p>
 
-      <h2>Academic Resources</h2>
-      <p>Access millions of academic papers, journals, and research materials for free.</p>
-      <ul>
+      <p>Start by defining your goal for the week. Are you preparing for an essay, revising for tests, or acquiring a new skill like coding, statistics, or design? Once your objective is clear, pick one core tool per need. For research, use an academic search engine or open-access journal directory and learn to filter by year, peer-review status, and subject area. For learning, supplement lectures with free courses and interactive practice platforms. For productivity, keep your system simple—one place for notes, one place for tasks, and a weekly review ritual. For writing, lean on tools that help you maintain clarity, accuracy, and proper citation without replacing your own thinking.</p>
 
-        <li><strong><a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Google Scholar</a>:</strong> Search academic papers and citations</li>
-        <li><strong><a href="https://www.jstor.org/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">JSTOR</a>:</strong> Digital library of academic journals</li>
-        <li><strong><a href="https://libgen.is/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Library Genesis</a>:</strong> Access to books and articles</li>
-        <li><strong><a href="https://arxiv.org/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">arXiv</a>:</strong> Preprint repository for sciences</li> 
-        <li><strong><a href="https://doaj.org/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Directory of Open Access Journals</a>:</strong> Free scholarly articles</li>
-        <li><strong><a href="https://www.researchgate.net/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">ResearchGate</a>:</strong> Academic social networking site</li>  
-        <li><strong><a href="https://www.semanticscholar.org/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Semantic Scholar</a>:</strong> AI-powered research tool</li>
-      </ul>
+      <p>When researching, it’s crucial to track where information comes from. Use citation managers to save papers, generate references, and maintain a tidy library. Tag your sources and write short summaries for each—future you will thank you. If you’re learning a new topic, combine passive and active methods: watch lectures, read articles, then practice by solving problems, summarising ideas, and teaching concepts to others. The combination of input and output creates retention. A free coding platform or simulation tool paired with concise note-taking is often more effective than binge-watching a dozen videos without practice.</p>
 
-      <h2>Learning Platforms</h2>
-      <p>World-class education from top universities and educators, completely free.</p>
-      <ul>
-        <li><strong><a href="https://www.khanacademy.org/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Khan Academy</a>:</strong> Comprehensive K-12 and college courses</li>
-        <li><strong><a href="https://www.coursera.org/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Coursera</a>:</strong> Free courses from top universities (audit mode)</li>  
-        <li><strong><a href="https://www.edx.org/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">edX</a>:</strong> University-level courses for free</li>  
-        <li><strong><a href="https://ocw.mit.edu/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">MIT OpenCourseWare</a>:</strong> Complete MIT course materials</li>  
-        <li><strong><a href="https://www.youtube.com/education" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">YouTube Education</a>:</strong> Educational channels on every topic</li>
-        <li><strong><a href="https://www.futurelearn.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">FutureLearn</a>:</strong> Free courses from UK universities</li>
-        <li><strong><a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Codecademy</a>:</strong> Free coding courses for beginners</li>
-        <li><strong><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">freeCodeCamp</a>:</strong> Learn to code for free</li>
-      </ul>
+      <p>Productivity doesn’t require complicated systems. Create a study hub with a note-taking app and a task board for assignments, deadlines, and revision blocks. Use templates for repeatable workflows—weekly schedules, project breakdowns, reading logs, and exam prep trackers. Keep your tools lightweight and consistent across devices. The best system is the one you use every day, not the fanciest one. If you’re collaborating, choose platforms that make sharing easy and keep files organised with sensible naming conventions, dates, and versioning.</p>
 
-      <h2>Productivity Tools</h2>
-      <p>Organize your studies, manage projects, and boost productivity with these free tools.</p>
-      <ul>
-        <li><strong><a href="https://www.notion.so/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Notion</a>:</strong> All-in-one workspace with free plan</li>
-        <li><strong><a href="https://trello.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Trello</a>:</strong> Project management tool</li>  
-        <li><strong><a href="https://workspace.google.com/intl/en/lp/education/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Google Workspace for Education</a>:</strong> Free for educational institutions</li>
-        <li><strong><a href="https://evernote.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Evernote</a>:</strong> Note-taking with free tier</li>
-        <li><strong><a href="https://todoist.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Todoist</a>:</strong> Task management</li>
-        <li><strong><a href="https://obsidian.md/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Obsidian</a>:</strong> Knowledge base and note-taking</li>
-        <li><strong><a href="https://www.forestapp.cc/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Forest</a>:</strong> Stay focused and beat procrastination</li>  
-      </ul>
+      <p>Writing is a skill that improves through feedback and iteration. Use grammar assistance to catch typos, but don’t rely on automation for structure or argument quality. Draft quickly, revise slowly, and check citations carefully. With proper referencing, you’ll avoid plagiarism and build credibility in your academic work. Pair your writing workflow with a simple checklist—thesis clarity, logical flow, evidence quality, citation format, and proofreading. Small rituals turn good drafts into excellent submissions.</p>
 
-      <h2>Writing and Research</h2>
-      <p>Improve your writing and manage research citations efficiently.</p>
-      <ul>
-        <li><strong><a href="https://www.grammarly.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Grammarly</a>:</strong> Writing assistance (free version available)</li>
-        <li><strong><a href="https://www.zotero.org/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Zotero</a>:</strong> Reference management</li>
-        <li><strong><a href="https://www.mendeley.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Mendeley</a>:</strong> Research paper organization</li>
-        <li><strong><a href="https://hemingwayapp.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Hemingway Editor</a>:</strong> Writing style improvement</li>
-        <li><strong><a href="https://quillbot.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">QuillBot</a>:</strong> Paraphrasing and summarization tool</li>
-        <li><strong><a href="https://www.scribbr.com/citation/generator/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Scribbr Citation Generator</a>:</strong> Free citation tool</li>
-      </ul>
+      <p>STEM learning benefits from interactive exploration. Use computational engines and graphing tools to test ideas, visualise relationships, and verify answers through multiple methods. Treat simulations as sandboxes: adjust parameters, record outcomes, and reflect on what changes and why. For languages, short daily sessions are better than occasional marathons. Practice listening, speaking, reading, and writing through authentic content—songs, short videos, and conversation prompts. For design and creative work, prioritise readability, alignment, contrast, and consistency. Free tools are powerful enough for academic presentations, portfolios, and social graphics when used thoughtfully.</p>
 
-      <h2>STEM Resources</h2>
-      <p>Essential tools for science, technology, engineering, and mathematics students.</p>
-      <ul>
-        <li><strong><a href="https://www.wolframalpha.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Wolfram Alpha</a>:</strong> Computational knowledge engine</li>
-        <li><strong><a href="https://www.desmos.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Desmos</a>:</strong> Graphing calculator</li>
-        <li><strong><a href="https://phet.colorado.edu/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">PhET Simulations</a>:</strong> Interactive science simulations</li>
-        <li><strong><a href="https://www.geogebra.org/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">GeoGebra</a>:</strong> Dynamic mathematics software</li>
-        <li><strong><a href="https://www.symbolab.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Symbolab</a>:</strong> Step-by-step math solver</li>
-        <li><strong><a href="https://brilliant.org/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Brilliant</a>:</strong> Interactive STEM learning</li>
-      </ul>
-
-      <h2>Language Learning</h2>
-      <p>Master new languages with these free platforms and apps.</p>
-      <ul>
-        <li><strong><a href="https://www.duolingo.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Duolingo</a>:</strong> Gamified language learning</li>
-        <li><strong><a href="https://www.memrise.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Memrise</a>:</strong> Learn with native speaker videos</li>
-        <li><strong><a href="https://www.bbc.co.uk/languages/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">BBC Languages</a>:</strong> Free language courses</li>
-        <li><strong><a href="https://www.busuu.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Busuu</a>:</strong> Social language learning</li>
-        <li><strong><a href="https://www.tandem.net/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Tandem</a>:</strong> Language exchange community</li>
-      </ul>
-
-      <h2>Creative Tools</h2>
-      <p>Design, edit, and create without expensive software.</p>
-      <ul>
-        <li><strong><a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Canva</a>:</strong> Graphic design made easy</li>
-        <li><strong><a href="https://www.gimp.org/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">GIMP</a>:</strong> Free image editing software</li>
-        <li><strong><a href="https://inkscape.org/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Inkscape</a>:</strong> Vector graphics editor</li>
-        <li><strong><a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Figma</a>:</strong> Collaborative design tool (free tier)</li>
-        <li><strong><a href="https://www.audacityteam.org/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">Audacity</a>:</strong> Free audio editing</li>
-        <li><strong><a href="https://www.davinciresolve.com/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-medium">DaVinci Resolve</a>:</strong> Professional video editing (free version)</li>
-      </ul>
+      <p>Most importantly, make these tools work together. A simple workflow might look like this: discover sources with a research engine, save them into a citation manager, take notes and create outlines in your workspace, track tasks with a board, write and revise with assistance, and present results using design tools. Review weekly to reduce friction and remove any tool you don’t actually use. With intention and habit, free resources can help you study effectively, build confidence, and deliver polished work without financial strain.</p>
 
       <h2>Conclusion</h2>
-      <p>With these 25+ free resources, you can access world-class education and tools without spending money. The key is knowing where to look and how to effectively use these resources to support your learning goals. Start exploring these tools today and take your education to the next level.</p>
+      <p>With the right approach, you can build a complete study system using free, high-quality resources. Start small: define one goal, pick a handful of tools, and create a repeatable workflow. Keep your sources organised, your notes clear, and your practice active. Over time, refine how these tools fit your routines—what you need for essays, exams, projects, and personal development. If you’re unsure where to begin, choose one tool per category (research, learning, productivity, writing, and presentation) and focus on consistency for two weeks. You’ll see meaningful progress without spending money, and you’ll develop a sustainable academic setup that scales with your ambitions.</p>
+
+      <p>Finally, remember that tools are only as effective as the habits behind them. Commit to regular reviews, ask better questions, and seek feedback early. When you pair free resources with intentional study practices—active recall, spaced repetition, outlines, and weekly planning—you create a system that compounds over time. Explore the cards below to discover specific tools we recommend, and use the detail pages to learn how to get the most out of each one. Your education can be rich, rigorous, and resourceful—at zero cost.</p>
     `,
   }
 ];

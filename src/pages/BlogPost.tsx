@@ -222,6 +222,43 @@ const BlogPost = () => {
     },
   ] : null;
 
+  // Resource cards for Free Resources post
+  const resourceCards = post?.id === "free-resources-students" ? [
+    { title: "Google Scholar", blurb: "Search academic papers and citations across disciplines.", officialUrl: "https://scholar.google.com/" },
+    { title: "JSTOR", blurb: "Digital library of academic journals and scholarship.", officialUrl: "https://www.jstor.org/" },
+    { title: "arXiv", blurb: "Preprints in physics, math, computer science, and more.", officialUrl: "https://arxiv.org/" },
+    { title: "Directory of Open Access Journals", blurb: "Index of high-quality, open-access peer-reviewed journals.", officialUrl: "https://doaj.org/" },
+    { title: "ResearchGate", blurb: "Network with researchers and access publications.", officialUrl: "https://www.researchgate.net/" },
+    { title: "Semantic Scholar", blurb: "AI-powered discovery for scientific literature.", officialUrl: "https://www.semanticscholar.org/" },
+
+    { title: "Khan Academy", blurb: "Free lessons from K-12 to college-level topics.", officialUrl: "https://www.khanacademy.org/" },
+    { title: "edX", blurb: "University-level courses, audit for free.", officialUrl: "https://www.edx.org/" },
+    { title: "MIT OpenCourseWare", blurb: "Complete MIT course materials, freely accessible.", officialUrl: "https://ocw.mit.edu/" },
+    { title: "YouTube Education", blurb: "Curated educational channels and content.", officialUrl: "https://www.youtube.com/education" },
+    { title: "Codecademy", blurb: "Interactive coding lessons with free modules.", officialUrl: "https://www.codecademy.com/" },
+    { title: "freeCodeCamp", blurb: "Learn to code with projects and certifications.", officialUrl: "https://www.freecodecamp.org/" },
+
+    { title: "Notion", blurb: "All-in-one workspace for notes, tasks, and projects.", officialUrl: "https://www.notion.so/" },
+    { title: "Trello", blurb: "Simple boards for project and study organization.", officialUrl: "https://trello.com/" },
+    { title: "Google Workspace for Education", blurb: "Collaboration suite widely available to students.", officialUrl: "https://workspace.google.com/intl/en/lp/education/" },
+    { title: "Obsidian", blurb: "Local-first knowledge base and note-taking.", officialUrl: "https://obsidian.md/" },
+
+    { title: "Grammarly", blurb: "Writing assistance with grammar and style suggestions.", officialUrl: "https://www.grammarly.com/" },
+    { title: "Zotero", blurb: "Reference manager to organize sources and citations.", officialUrl: "https://www.zotero.org/" },
+    { title: "Mendeley", blurb: "Manage research papers and collaborate with peers.", officialUrl: "https://www.mendeley.com/" },
+    { title: "Scribbr Citation Generator", blurb: "Fast and free citations in APA, MLA, and more.", officialUrl: "https://www.scribbr.com/citation/generator/" },
+
+    { title: "Wolfram Alpha", blurb: "Computational knowledge engine for STEM.", officialUrl: "https://www.wolframalpha.com/" },
+    { title: "Desmos", blurb: "Powerful graphing calculator and math tools.", officialUrl: "https://www.desmos.com/" },
+    { title: "PhET Simulations", blurb: "Interactive science and math simulations.", officialUrl: "https://phet.colorado.edu/" },
+
+    { title: "Duolingo", blurb: "Gamified language learning across many languages.", officialUrl: "https://www.duolingo.com/" },
+    { title: "Memrise", blurb: "Language learning with native speaker videos.", officialUrl: "https://www.memrise.com/" },
+
+    { title: "Canva", blurb: "Create designs, presentations, and social graphics.", officialUrl: "https://www.canva.com/" },
+    { title: "GIMP", blurb: "Open-source image editor for creative projects.", officialUrl: "https://www.gimp.org/" }
+  ] : null;
+
   if (!post) {
     return <Navigate to="/blog" replace />;
   }
@@ -305,19 +342,41 @@ const BlogPost = () => {
                       </h3>
                       <p className="text-sm text-muted-foreground">{p.blurb}</p>
                     </CardHeader>
-                    <CardContent>
-                      <ul className="list-disc pl-5 text-sm space-y-2">
-                        {p.details.map((d) => (
-                          <li key={d}>{d}</li>
-                        ))}
-                      </ul>
-                    </CardContent>
+
                     <CardFooter className="gap-2">
                       <Button asChild variant="outline" size="sm">
                         <Link to={`/platform/${p.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}`}>View details</Link>
                       </Button>
                       <Button asChild variant="secondary" size="sm">
                         <a href={p.officialUrl} target="_blank" rel="noopener noreferrer">Visit site</a>
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {resourceCards && (
+            <div className="mb-12">
+              <h2 className="text-2xl font-bold mb-6">Explore Free Resources</h2>
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {resourceCards.map((r) => (
+                  <Card key={r.title} className="h-full">
+                    <CardHeader>
+                      <h3 className="text-lg font-semibold">
+                        <Link to={`/resource/${r.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}`} className="hover:underline">
+                          {r.title}
+                        </Link>
+                      </h3>
+                      <p className="text-sm text-muted-foreground">{r.blurb}</p>
+                    </CardHeader>
+                    <CardFooter className="gap-2">
+                      <Button asChild variant="outline" size="sm">
+                        <Link to={`/resource/${r.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}`}>View details</Link>
+                      </Button>
+                      <Button asChild variant="secondary" size="sm">
+                        <a href={r.officialUrl} target="_blank" rel="noopener noreferrer">Visit site</a>
                       </Button>
                     </CardFooter>
                   </Card>
