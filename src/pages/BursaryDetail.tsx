@@ -8,6 +8,8 @@ import { bursaries } from "@/data/bursaries";
 import { Breadcrumb, BreadcrumbList, BreadcrumbItem, BreadcrumbLink, BreadcrumbSeparator, BreadcrumbPage } from "@/components/ui/breadcrumb";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
+import { useEffect } from "react";
+import { setPageMeta } from "@/lib/utils";
 
 const BursaryDetail = () => {
   const { slug } = useParams();
@@ -29,6 +31,15 @@ const BursaryDetail = () => {
   const application = details.filter((d) => /application|window|deadline|apply/i.test(d));
   const commitments = details.filter((d) => /service|agreement|work-back|teach|employment/i.test(d));
   const experience = details.filter((d) => /experience|vacation work|practical|training/i.test(d));
+
+  useEffect(() => {
+    setPageMeta({
+      title: `${bursary.title} – Bursary Details | StudySprint`,
+      description: bursary.blurb,
+      canonical: typeof window !== "undefined" ? window.location.href : undefined,
+      robots: "index,follow",
+    });
+  }, [bursary]);
 
   return (
     <div className="flex min-h-screen flex-col">

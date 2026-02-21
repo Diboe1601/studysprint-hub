@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import BlogCard from "@/components/BlogCard";
@@ -7,11 +7,22 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { blogPosts } from "@/data/blogPosts";
 import { Search, Filter, BookOpen } from "lucide-react";
+import { setPageMeta } from "@/lib/utils";
 
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState("All Posts");
   const [searchQuery, setSearchQuery] = useState("");
   const [sortBy, setSortBy] = useState("newest");
+
+  useEffect(() => {
+    setPageMeta({
+      title: "StudySprint Blog – Guides, Tools, Bursaries",
+      description:
+        "Explore study tips, app reviews, bursary guidance, and learning strategies for South African students.",
+      canonical: typeof window !== "undefined" ? window.location.href : undefined,
+      robots: "index,follow",
+    });
+  }, []);
 
   const categories = [
     "All Posts",

@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -15,6 +15,7 @@ import heroImage from "@/assets/hero-image.jpg";
 import studyAppsImage from "@/assets/blog-study-apps.jpg";
 import onlineCoursesImage from "@/assets/blog-online-courses.jpg";
 import productivityImage from "@/assets/blog-productivity.jpg";
+import { setPageMeta } from "@/lib/utils";
 
 interface BlogPost {
   id: string;
@@ -30,6 +31,15 @@ const Index = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
+  useEffect(() => {
+    setPageMeta({
+      title: "StudySprint - Study Smarter, Not Harder",
+      description:
+        "Discover study tips, tools, and online platforms for South African students. Practical guides, bursary advice, and honest app reviews.",
+      canonical: typeof window !== "undefined" ? window.location.href : undefined,
+      robots: "index,follow",
+    });
+  }, []);
   const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     

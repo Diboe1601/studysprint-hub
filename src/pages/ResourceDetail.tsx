@@ -4,6 +4,8 @@ import Footer from "@/components/Footer";
 import ShuffleHero from "@/components/ShuffleHero";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card";
+import { useEffect } from "react";
+import { setPageMeta } from "@/lib/utils";
 
 type ResourceInfo = {
   title: string;
@@ -222,6 +224,15 @@ const ResourceDetail = () => {
   if (!resource) {
     return <Navigate to="/blog/free-resources-students" replace />;
   }
+
+  useEffect(() => {
+    setPageMeta({
+      title: `${resource.title} – Resource Details | StudySprint`,
+      description: resource.blurb,
+      canonical: typeof window !== "undefined" ? window.location.href : undefined,
+      robots: "index,follow",
+    });
+  }, [resource]);
 
   return (
     <div className="flex min-h-screen flex-col">

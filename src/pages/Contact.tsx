@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ShuffleHero from "@/components/ShuffleHero";
@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { Mail, MessageSquare, Send } from "lucide-react";
+import { setPageMeta } from "@/lib/utils";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -18,6 +19,16 @@ const Contact = () => {
   });
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  useEffect(() => {
+    setPageMeta({
+      title: "Contact StudySprint",
+      description:
+        "Questions or feedback? Contact StudySprint. We respond within 24–48 hours on weekdays.",
+      canonical: typeof window !== "undefined" ? window.location.href : undefined,
+      robots: "index,follow",
+    });
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

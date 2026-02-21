@@ -4,6 +4,8 @@ import Footer from "@/components/Footer";
 import ShuffleHero from "@/components/ShuffleHero";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card";
+import { useEffect } from "react";
+import { setPageMeta } from "@/lib/utils";
 
 const PLATFORM_MAP: Record<string, {
   title: string;
@@ -42,6 +44,15 @@ const PlatformDetail = () => {
   if (!platform) {
     return <Navigate to="/blog/coursera-vs-udemy" replace />;
   }
+
+  useEffect(() => {
+    setPageMeta({
+      title: `${platform.title} – Platform Details | StudySprint`,
+      description: platform.blurb,
+      canonical: typeof window !== "undefined" ? window.location.href : undefined,
+      robots: "index,follow",
+    });
+  }, [platform]);
 
   return (
     <div className="flex min-h-screen flex-col">

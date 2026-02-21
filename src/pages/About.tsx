@@ -6,6 +6,8 @@ import { NumberTicker } from "@/components/ui/number-ticker";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
 import { BookOpen, Target, Users, Heart, Award, Clock, TrendingUp, Globe, Star, CheckCircle, HelpCircle } from "lucide-react";
+import { useEffect } from "react";
+import { setPageMeta } from "@/lib/utils";
 
 const About = () => {
   const teamMembers = [
@@ -53,6 +55,15 @@ const About = () => {
     }
   ];
 
+  useEffect(() => {
+    setPageMeta({
+      title: "About StudySprint – Mission, Values, Team",
+      description:
+        "Empowering South African students with research-backed study guides, bursary advice, and honest tool reviews.",
+      canonical: typeof window !== "undefined" ? window.location.href : undefined,
+      robots: "index,follow",
+    });
+  }, []);
   return (
     <div className="flex min-h-screen flex-col">
       <Navigation />

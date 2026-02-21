@@ -7,6 +7,8 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowLeft, Calendar, Clock } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
 import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card";
+import { useEffect } from "react";
+import { setPageMeta, injectJsonLd } from "@/lib/utils";
 
 const BlogPost = () => {
   const { id } = useParams();
@@ -262,6 +264,30 @@ const BlogPost = () => {
   if (!post) {
     return <Navigate to="/blog" replace />;
   }
+
+  useEffect(() => {
+    const url = typeof window !== "undefined" ? window.location.href : undefined;
+    setPageMeta({
+      title: `${post.title} – StudySprint`,
+      description: post.excerpt,
+      canonical: url,
+      robots: "index,follow",
+    });
+    injectJsonLd({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": post.title,
+      "description": post.excerpt,
+      "datePublished": post.date,
+      "author": post.author ? { "@type": "Person", "name": post.author } : undefined,
+      "articleSection": post.category,
+      "isPartOf": {
+        "@type": "Blog",
+        "name": "StudySprint Blog"
+      },
+      "mainEntityOfPage": url ? { "@type": "WebPage", "@id": url } : undefined
+    });
+  }, [post]);
 
   return (
     <div className="flex min-h-screen flex-col">

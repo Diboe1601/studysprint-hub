@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { setPageMeta } from "@/lib/utils";
 
 const NotFound = () => {
   const location = useLocation();
@@ -7,6 +8,15 @@ const NotFound = () => {
   useEffect(() => {
     console.error("404 Error: User attempted to access non-existent route:", location.pathname);
   }, [location.pathname]);
+
+  useEffect(() => {
+    setPageMeta({
+      title: "Page Not Found – StudySprint",
+      description: "The page you are looking for does not exist.",
+      canonical: typeof window !== "undefined" ? window.location.href : undefined,
+      robots: "noindex,follow",
+    });
+  }, []);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-muted">

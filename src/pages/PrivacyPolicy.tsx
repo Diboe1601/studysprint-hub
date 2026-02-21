@@ -1,7 +1,18 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { useEffect } from "react";
+import { setPageMeta } from "@/lib/utils";
 
 const PrivacyPolicy = () => {
+  useEffect(() => {
+    setPageMeta({
+      title: "Privacy Policy – StudySprint",
+      description:
+        "How StudySprint collects, uses, and protects your data. Learn about cookies, third-party services, and your rights.",
+      canonical: typeof window !== "undefined" ? window.location.href : undefined,
+      robots: "index,follow",
+    });
+  }, []);
   return (
     <div className="flex min-h-screen flex-col">
       <Navigation />
