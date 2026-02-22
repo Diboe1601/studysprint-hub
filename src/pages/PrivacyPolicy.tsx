@@ -27,9 +27,8 @@ const PrivacyPolicy = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
               <p className="text-muted-foreground">
-                Welcome to StudySprint. We value your privacy and are committed to protecting your personal information. 
-                This Privacy Policy explains how we collect, use, store, and safeguard your data when you browse our website, 
-                as well as the rights you have regarding your personal information.
+                Here at StudySprint, your trust matters most. Because we care about security, every detail you share is handled with attention. When visiting our site, know that your info stays under careful watch - how it's gathered, kept, or used depends on clear choices we make together. 
+                Each step taken follows strict handling rules just for you. What belongs to you remains yours, always visible, changeable, respected through actions not promises. Your control shows up in real ways across each part of the experience.
               </p>
             </section>
 
@@ -37,7 +36,7 @@ const PrivacyPolicy = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Information We Collect</h2>
               <p className="text-muted-foreground mb-4">
-                We may collect, use, store, and process the following categories of personal data:
+                Personal details could show up in our records. Information like names might get saved. Some data sticks around for handling. Records can include contact points. Details are kept under review. Processing happens when needed. Stored bits depend on purpose. Usage follows certain rules:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                 <li><strong>Identity Data:</strong> Name, username, or similar identifiers.</li>
@@ -67,9 +66,8 @@ const PrivacyPolicy = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Cookies</h2>
               <p className="text-muted-foreground">
-                StudySprint uses cookies and similar tracking technologies to improve functionality, enhance user 
-                experience, and analyze website traffic. You can disable cookies in your browser settings, but this 
-                may affect certain features of the website.
+                When you visit StudySprint, tiny files called cookies help the site work better plus keep track of how people move around it. 
+                Changing your browser to block these might slow some parts down a bit. Each person decides their own comfort level with that choice.
               </p>
             </section>
 
@@ -77,7 +75,7 @@ const PrivacyPolicy = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Third-Party Services</h2>
               <p className="text-muted-foreground mb-4">
-                We may work with trusted third-party service providers, including:
+                Finding partners we trust helps us offer what you need - companies that handle specific tasks for our operations. These outside experts support different parts of how things run behind the scenes:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                 <li>Google Analytics – to understand website traffic and performance.</li>
@@ -90,15 +88,15 @@ const PrivacyPolicy = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Your Rights</h2>
               <p className="text-muted-foreground mb-4">
-                Depending on your location, you may have the right to:
+                Your rights might include certain options, based on where you live:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
-                <li>Access the personal data we hold about you.</li>
+                <li>You can look at your own information stored in our system whenever needed.</li>
                 <li>Request corrections to inaccurate information.</li>
-                <li>Request deletion of your personal data.</li>
-                <li>Object to the processing of your data.</li>
-                <li>Request a copy or transfer of your data.</li>
-                <li>Withdraw consent at any time.</li>
+                <li>Your personal information can be removed upon request.</li>
+                <li>Refuse how your information gets handled.</li>
+                <li>A person can ask to get their information sent elsewhere. One option is having it shared directly with them.</li>
+                <li>You can take back your permission whenever you want.</li>
               </ul>
             </section>
 
@@ -106,9 +104,8 @@ const PrivacyPolicy = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Data Security</h2>
               <p className="text-muted-foreground">
-                We implement appropriate security measures to protect your personal data from unauthorized access, 
-                alteration, or disclosure. Access is limited to individuals and partners who require it for legitimate 
-                business purposes.
+                Staying safe online means putting up barriers where they’re needed most. Only those who truly need to see your details can get near them. 
+                Protection kicks in the moment someone tries to peek without permission. Think of it like locks on doors - only certain keys work. Partners involved must follow strict rules, every single time. What you share stays shielded from changes or leaks. Each step taken aims squarely at keeping things private.
               </p>
             </section>
 
@@ -116,8 +113,8 @@ const PrivacyPolicy = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Children&apos;s Privacy</h2>
               <p className="text-muted-foreground">
-                StudySprint is intended for students of all ages. If you are under 16, please obtain parental consent 
-                before sharing personal information. Parents may contact us to request the deletion of their child’s data.
+                Young learners can use StudySprint too. 
+                When under sixteen, get a parent’s okay before giving any personal details. Reach out to us if you want your child’s info removed - we’ll take care of it.
               </p>
             </section>
 
@@ -125,8 +122,7 @@ const PrivacyPolicy = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Changes to This Policy</h2>
               <p className="text-muted-foreground">
-                We may update this Privacy Policy periodically. Any changes will be posted on this page with an updated 
-                “Last updated” date at the top of the policy.
+                From time to time, this Privacy Policy might change. Updates appear right here, marked clearly up front with a new “Last updated” date showing when things changed.
               </p>
             </section>
 
@@ -134,7 +130,7 @@ const PrivacyPolicy = () => {
             <section>
               <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
               <p className="text-muted-foreground">
-                For questions about this Privacy Policy or your personal data, contact us at:  
+                If you have any concerns regarding this Privacy Policy or information we hold about you, reach out using the details below:  
                 <br />
                 <strong>studysprint.official24@gmail.com</strong>
               </p>
@@ -144,8 +140,7 @@ const PrivacyPolicy = () => {
             <section className="border-t pt-8 mt-8">
               <h2 className="text-2xl font-semibold mb-4">Disclaimer</h2>
               <p className="text-muted-foreground mb-4">
-                The information on StudySprint is intended for general educational and informational purposes. While we 
-                strive for accuracy:
+                StudySprint shares details meant mostly for learning and awareness. Accuracy matters to us, yet results may differ at times:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
                 <li>We do not guarantee the completeness or accuracy of information on the site.</li>

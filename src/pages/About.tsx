@@ -36,17 +36,17 @@ const About = () => {
     {
       icon: <Star className="h-6 w-6" />,
       title: "Evidence-Based",
-      description: "All our recommendations are backed by research and real-world testing"
+      description: "Every suggestion we make rests on evidence gathered from studies along with hands-on trials"
     },
     {
       icon: <Users className="h-6 w-6" />,
       title: "Student-First",
-      description: "We prioritize student needs and experiences in everything we create"
+      description: "Every choice we make begins with how students feel about it. What matters most shows up in their daily moments. Designs take shape around real feedback, not guesses. Learning tools grow from actual struggles they face. Each detail answers a quiet wish they never spoke aloud"
     },
     {
       icon: <TrendingUp className="h-6 w-6" />,
       title: "Continuous Improvement",
-      description: "We constantly update our content with the latest tools and strategies"
+      description: "New tools show up regularly. Our material changes each time they do. Updates slip in whenever fresh methods appear"
     },
     {
       icon: <Globe className="h-6 w-6" />,
@@ -82,7 +82,8 @@ const About = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
             <p className="text-lg text-muted-foreground">
-              At StudySprint, we believe that every student deserves access to the best learning resources and study strategies. Our mission is to help students discover innovative tools, platforms, and techniques that make learning more effective, engaging, and enjoyable.
+              Learning should never feel out of reach, which is why StudySprint exists. Behind each idea we share lies a simple goal - making study time work better for everyone. Tools matter, yet so does how you use them, guiding our search for fresh methods. 
+              Engagement grows when effort meets clarity, something we aim to support. What works today might shift tomorrow, keeping us focused on what truly helps students learn.
             </p>
           </div>
 
@@ -136,7 +137,7 @@ const About = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Our Impact</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Helping students achieve academic excellence through proven strategies and innovative tools
+              Every student can reach high marks when smart methods guide their way - imagine progress built on real results, shaped by fresh approaches that work. Learning gets stronger when techniques are tested; new resources open doors just a bit wider each day
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
@@ -174,13 +175,14 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-6 text-center">Our Story</h2>
           <div className="prose prose-lg max-w-none">
             <p className="text-muted-foreground mb-4">
-              StudySprint was born from a simple observation: students today have access to more learning resources than ever before, yet many still struggle to find the right tools and strategies that work for them.
+              It started with noticing something clear. Right now, learners can reach countless ways to study. Still, lots of them have trouble picking what fits best. StudySprint came up because of that gap.
             </p>
             <p className="text-muted-foreground mb-4">
-              We started this blog to bridge that gap. Our team researches, tests, and reviews various study apps, online platforms, and learning techniques to bring you honest, helpful recommendations. Whether you're preparing for exams, learning a new skill, or looking for scholarship opportunities, we're here to guide you.
+              This blog began as a way to fill the space between confusion and clarity. Behind every post is a group digging into study tools, trying them out, seeing what works. Honest thoughts come from real testing of apps, websites, ways to learn. Help comes without shortcuts or false promises. 
+              If exams are near, curiosity has struck, or funding feels out of reach, direction shows up here. Support sits quietly in each paragraph, ready when needed.
             </p>
             <p className="text-muted-foreground">
-              Today, StudySprint serves thousands of students worldwide, helping them discover better ways to study, learn, and succeed. We're constantly updating our content with the latest tools and strategies to ensure you always have access to the best resources available.
+              Right now, StudySprint supports countless learners across the globe, guiding them toward smarter study habits that lead to real results. Our materials get refreshed all the time - new methods, fresh tools - so what you find here stays sharp and useful.
             </p>
           </div>
         </div>
@@ -192,7 +194,7 @@ const About = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Our Values</h2>
             <p className="text-lg text-muted-foreground">
-              The principles that guide everything we do at StudySprint
+              What shapes each move we make over here at StudySprint
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
@@ -217,7 +219,7 @@ const About = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Meet Our Team</h2>
             <p className="text-lg text-muted-foreground">
-              Education enthusiasts dedicated to helping students succeed
+              Education enthusiasts dedicated to helping students succeed. Success becomes possible when support shows up consistently. Helping others grow matters more than anything else here
             </p>
           </div>
           <div className="flex justify-center">
@@ -276,14 +278,14 @@ const About = () => {
       </section>
 
       {/* FAQ Section - SEO Optimized with Schema Markup */}
-      <section className="py-16 bg-muted/50" itemScope itemType="https://schema.org/FAQPage">
+      <section className="py-16 bg-accent/5" aria-label="Frequently asked questions" itemScope itemType="https://schema.org/FAQPage">
         <div className="container max-w-4xl">
           <div className="text-center mb-12">
             <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary mb-4">
               <HelpCircle className="h-8 w-8" />
             </div>
             <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-muted-foreground">
               Find answers to common questions about StudySprint and how we help students succeed
             </p>
           </div>
@@ -295,7 +297,8 @@ const About = () => {
               </AccordionTrigger>
               <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                 <p itemProp="text" className="text-muted-foreground">
-                  StudySprint is a free educational platform created to help students boost their productivity, develop smarter study habits, and discover valuable learning resources. We offer in-depth blogs, practical guides, and curated tools designed to support your academic journey.
+                  Every day, StudySprint opens doors without charging a fee. Created for learners who want more from their time, it nudges better routines into place through small shifts. Instead of just reading, you get step-by-step walkthroughs that show how things work. 
+                  Hidden inside are handpicked apps and links - quiet helpers when the workload piles up. Progress doesn’t shout here; it grows where attention goes. Behind each post lies a reason: make studying feel less like climbing, more like moving forward.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -306,7 +309,7 @@ const About = () => {
               </AccordionTrigger>
               <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                 <p itemProp="text" className="text-muted-foreground">
-                  Absolutely. All our content is developed using reliable sources, including insights from cognitive science, guidance from education experts, and proven learning methodologies. We prioritise delivering accurate and practical advice you can trust.
+                  Truth is, we build every piece on solid ground - backed by cognitive science, shaped through talks with education pros, guided by methods that actually work. You get clear, usable direction because precision matters here.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -317,7 +320,8 @@ const About = () => {
               </AccordionTrigger>
               <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                 <p itemProp="text" className="text-muted-foreground">
-                  Not at all. Every article, guide, and resource on StudySprint is freely accessible without any sign-up required. Should we introduce features like newsletters or user accounts in the future, participation will always remain entirely optional.
+                  Nope. All materials - every piece, every tutorial, every tool - you can reach them anytime on StudySprint, free. Zero need to register. 
+                  If someday things shift, maybe a newsletter shows up or profiles appear, jumping in would never be forced. You’d still choose your path. Always.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -328,7 +332,8 @@ const About = () => {
               </AccordionTrigger>
               <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                 <p itemProp="text" className="text-muted-foreground">
-                  We collect only essential data such as device information and browsing behaviour through analytics tools like Google Analytics. Personal details, including your email address, are only gathered when you voluntarily provide them. For full details, please review our <Link to="/privacy-policy" className="text-primary hover:underline">Privacy Policy</Link>.
+                  When you visit, some basics get recorded - stuff like what device you’re using or where you click around. 
+                  If we grab anything more personal, say an email, it is because you chose to share it. Curious about specifics? The full picture lives in our Privacy Policy.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -339,7 +344,7 @@ const About = () => {
               </AccordionTrigger>
               <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                 <p itemProp="text" className="text-muted-foreground">
-                  Yes, 100%. All our blog posts, study guides, and educational resources are available at no cost. We may display advertisements or include affiliate links to help maintain the platform, but these never influence our honest recommendations.
+                  For sure - every single blog post, study guide, and learning tool is free to access. Ads might show up here and there, alongside some affiliate links, just so we can keep things running. Still, what we suggest comes straight from experience, nothing swayed by outside support.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -350,7 +355,8 @@ const About = () => {
               </AccordionTrigger>
               <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                 <p itemProp="text" className="text-muted-foreground">
-                  Currently, we do not publish guest contributions. However, we may explore collaboration opportunities in the future. If you have an idea worth discussing, feel free to reach out via <a href="mailto:studysprint-official@gmail.com" className="text-primary hover:underline">studysprint-official@gmail.com</a>.
+                  Sure thing - we’re open to guest articles along with collaboration ideas.
+                  Right now, guest posts aren’t something we put online. That could change later down the line, though. Got a thought that might fit? Send it over to <a href="mailto:studysprint-official@gmail.com" className="text-primary hover:underline">studysprint-official@gmail.com</a>.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -361,7 +367,7 @@ const About = () => {
               </AccordionTrigger>
               <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                 <p itemProp="text" className="text-muted-foreground">
-                  Of course! You're more than welcome to share links to our content with friends, classmates, or on social media. However, please note that reproducing or copying full articles without prior permission is not permitted.
+                  Sure thing. Feel free to pass along links to our stuff - share them with  friends, classmates, or on social media. That said, duplicating entire pieces word for word? Not allowed unless you ask first.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -372,7 +378,8 @@ const About = () => {
               </AccordionTrigger>
               <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                 <p itemProp="text" className="text-muted-foreground">
-                  We'd love to hear from you! For any questions, feedback, or enquiries, please email us at <a href="mailto:studysprint-official@gmail.com" className="text-primary hover:underline">studysprint-official@gmail.com</a>. We aim to respond as quickly as possible.
+                  Got something on your mind? Reach out anytime by sending an email to <a href="mailto:studysprint-official@gmail.com" className="text-primary hover:underline">studysprint-official@gmail.com</a>. Questions, thoughts, suggestions - whatever it is, we’re here. Replies usually come fast, because waiting around stinks. Hearing from you matters more than you think. That inbox stays open for real talk, nothing less.
+
                 </p>
               </AccordionContent>
             </AccordionItem>

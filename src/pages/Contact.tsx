@@ -115,14 +115,17 @@ const Contact = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
                 <p className="text-muted-foreground">
-                  Whether you have a question about our content, want to suggest a topic, or just want to say hello, we're here to help.
+                  Got something on your mind. Maybe it's a thought about what we share. Or perhaps there’s a subject you’d like to toss into the mix. 
+                  Even if it’s only a quick greeting. We’re around whenever you need us.
                 </p>
                 <div className="space-y-4 text-base leading-relaxed text-muted-foreground mt-6">
                   <p>
-                    You’re welcome to contact us if you need clarity on a bursary requirement, want practical study resources, spotted an error, or have a topic you’d like us to cover. We also love hearing what’s working (and what isn’t) in your study routine—your stories help us make better guides. If you represent a school, NGO, or company, we’re open to partnerships that genuinely help students, from scholarship drives to workshops and verified student discounts.
+                    Reach out anytime clarity is needed on bursary rules, useful study tools are wanted, mistakes are noticed, or topics come to mind worth exploring here. 
+                    Hearing about real experiences with learning habits matters - what clicks, what drags, shapes how these guides grow. Schools, nonprofits, businesses bringing ideas forward that lift learners through fair chances: think aid campaigns, skill sessions, trusted savings - let it flow our way.
                   </p>
                   <p>
-                    When you write to us, expect a thoughtful, human reply. We aim to respond within 24–48 hours on weekdays. For time‑sensitive application questions, we’ll share clear next steps and credible sources. We can’t file applications or offer legal advice, but we do provide checklists, templates, and practical guidance so you can move forward confidently. If your question needs deeper research, we’ll acknowledge it and follow up with a realistic timeline. For faster help, include your deadline, relevant links, and what you’ve tried so far.
+                    Most replies here come straight from a person, not a script. Usually within one or two days during the week, someone will answer. If your message is about an urgent step in applying, we point out what to do next using trustworthy references. Instead of submitting forms or giving legal opinions, our role leans toward offering step-by-step lists, fillable examples, and usable direction. That way, moving ahead feels clearer, even without hand-holding. 
+                    When your query calls for more digging, expect a note saying we’re on it - along with a clear timeframe. To speed things up, share your due date, useful pages, plus steps already taken.
                   </p>
                 </div>
               </div>

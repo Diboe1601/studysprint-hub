@@ -303,42 +303,47 @@ const Index = () => {
           <h2 className="text-3xl font-bold mb-6">What is StudySprint?</h2>
           <div className="space-y-4 text-muted-foreground">
             <p>
-              StudySprint is a student-first learning hub that helps you study smarter, plan better, and make informed choices about your education. We publish practical, research-informed guides, bursary and scholarship advice, honest app and tool reviews, and downloadable templates that turn good intentions into consistent progress. Whether you’re preparing for exams, choosing resources, or applying for funding, StudySprint gives you clear, actionable content—no fluff, no gatekeeping.
+              What if studying felt less like guessing? StudySprint builds around students, offering ways to learn efficiently, organize daily moves, then pick educational paths with confidence. Because real guidance matters, posts include step-by-step walkthroughs rooted in evidence, tips on financial aid, transparent breakdowns of apps worth trying, along with printable planners turning vague goals into steady motion. 
+              When tests loom, when tools need comparing, when support funds open - you find what works, stripped down, ready to use. Hidden agendas do not live here.
             </p>
             <p>
-              Built for high school learners, university and TVET students, and postgraduate candidates, our content prioritises the South African context while remaining useful to students globally. We solve common problems students face: information overload, conflicting advice, and low-quality recommendations that waste time and money. Instead, we help you focus on methods that work, tools that add real value, and bursaries you can realistically qualify for. Our approach is trustworthy because we follow clear editorial standards, cite credible sources where relevant, keep recommendations independent (no pay-to-play), and regularly update our content to reflect changes in applications, platforms, and policies. If we recommend something, it’s because it can genuinely improve your study outcomes, reduce stress, and help you build momentum.
+              Meant for high schoolers,university and TVET students, and postgraduate candidates , what we offer stays rooted in South Africa yet fits learners everywhere. Not drowning in endless data matters - so filtering noise out comes first. Confusion from mixed messages? That gets cleared up here. Tips lacking proof or purpose won’t stick around long. Real tools show up instead - ones that fit actual needs without false promises. Scholarships listed are within reach, not pipe dreams. Trust builds through consistency, so every piece follows strict review rules. Sources back claims when needed, never hidden or vague. No one pays to be featured - that line doesn’t get crossed. Updates roll in often as systems shift and deadlines change. 
+              Suggestions appear only if they’ve shown results before. Better grades become possible. Anxiety dips slowly. Progress feels closer than expected.
             </p>
           </div>
         </div>
       </section>
 
       {/* What You’ll Find on StudySprint */}
-      <section className="py-16 bg-accent/5" aria-label="What you’ll find on StudySprint">
+      <section className="py-16 bg-accent/5" aria-label="StudySprint Content Overview">
         <div className="container max-w-5xl">
-          <h2 className="text-3xl font-bold mb-6">What You’ll Find on StudySprint</h2>
+          <h2 className="text-3xl font-bold mb-6">StudySprint Content Overview</h2>
           <p className="text-muted-foreground mb-8 max-w-3xl">
-            We organise everything you need to study effectively and navigate your academic journey—from daily habits to big decisions about courses, tools, and funding. Start with our guides, then use our templates and recommendations to build a system that works for you.
+            Picture your days falling into place, one smart choice at a time. From picking the right course to finding money for it, each step gets clearer. Our guides show the way, opening doors without pressure. Templates sit ready - use them your own way. 
+            Recommendations wait quietly, helpful but never pushy. Build something real around what fits only you.
           </p>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <div className="flex items-start gap-3 p-4 rounded-lg border bg-card">
               <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
               <div>
                 <h3 className="font-semibold">Step-by-Step Study Guides</h3>
-                <p className="text-sm text-muted-foreground">Active recall, spaced repetition, Pomodoro, and exam strategies that actually work.</p>
+                <p className="text-sm text-muted-foreground">Finding answers yourself instead of just rereading helps memory stick. Spreading study sessions out over time builds stronger retention gradually. Working in focused bursts followed by short breaks keeps energy steady throughout. Approaches used during tests can change outcomes more than expected.
+
+                </p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg border bg-card">
               <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
               <div>
                 <h3 className="font-semibold">Bursary & Scholarship Advice</h3>
-                <p className="text-sm text-muted-foreground">South Africa-focused with global opportunities; eligibility, timelines, and application tips.</p>
+                <p className="text-sm text-muted-foreground">Starting strong in South Africa while eyeing worldwide openings. Qualifications matter just as much as timing does. Think ahead before applying - details count more than you expect.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg border bg-card">
               <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
               <div>
                 <h3 className="font-semibold">Honest App & Tool Reviews</h3>
-                <p className="text-sm text-muted-foreground">Productivity, note-taking, flashcards, and study planners—tested and compared.</p>
+                <p className="text-sm text-muted-foreground">Focused on getting things done, jotting down ideas, using digital flashcards, yet also checking out study timetables - all tried, then measured side by side.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg border bg-card">
@@ -352,28 +357,28 @@ const Index = () => {
               <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
               <div>
                 <h3 className="font-semibold">Downloadable Templates</h3>
-                <p className="text-sm text-muted-foreground">Study planners, time-blocking sheets, revision schedules, and grade trackers.</p>
+                <p className="text-sm text-muted-foreground">Pencil in a schedule that maps out each study session. Slot your tasks into timed chunks throughout the day. Lay out review periods ahead of exams with clear goals. Watch progress by marking scores after every test.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg border bg-card">
               <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
               <div>
                 <h3 className="font-semibold">University & Career Readiness</h3>
-                <p className="text-sm text-muted-foreground">Personal statements, interview prep, and decision frameworks for next steps.</p>
+                <p className="text-sm text-muted-foreground">Starting with your story, then shaping how you talk about it. Choices come later, once practice sharpens the words. Clarity builds when talking feels natural.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg border bg-card">
               <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
               <div>
-                <h3 className="font-semibold">Productivity Systems for Students</h3>
-                <p className="text-sm text-muted-foreground">Time-blocking, habit tracking, and routines that reduce stress and increase focus.</p>
+                <h3 className="font-semibold">Simple Ways Students Can Get More Done</h3>
+                <p className="text-sm text-muted-foreground">Pacing your day in chunks shapes how clearly you think. Watching small habits grow changes what feels possible each morning. Quiet patterns replace noise, slowly building steady attention instead.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg border bg-card">
               <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
               <div>
                 <h3 className="font-semibold">Community Insights</h3>
-                <p className="text-sm text-muted-foreground">Real experiences, proven tips, and success stories from fellow students.</p>
+                <p className="text-sm text-muted-foreground">Everyday moments, tested advice, because real people shared what worked. Some found their rhythm, others stumbled into wins - still learning together.</p>
               </div>
             </div>
           </div>
@@ -386,7 +391,8 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Why Choose StudySprint?</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              We provide comprehensive resources and proven strategies to help you excel in your academic journey.
+              Starting strong, our tools guide learning through real methods that work. Success begins when support meets effort, shaped by clear steps forward. 
+              Every step built on what students actually need comes alive here. Growth shows up where materials match goals - simple, steady, useful.
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
@@ -540,7 +546,8 @@ const Index = () => {
               </AccordionTrigger>
               <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                 <p itemProp="text" className="text-muted-foreground">
-                  StudySprint is a free educational platform created to help students boost their productivity, develop smarter study habits, and discover valuable learning resources. We offer in-depth blogs, practical guides, and curated tools designed to support your academic journey.
+                  Every day, StudySprint opens doors without charging a fee. Created for learners who want more from their time, it nudges better routines into place through small shifts. Instead of just reading, you get step-by-step walkthroughs that show how things work. 
+                  Hidden inside are handpicked apps and links - quiet helpers when the workload piles up. Progress doesn’t shout here; it grows where attention goes. Behind each post lies a reason: make studying feel less like climbing, more like moving forward.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -551,7 +558,7 @@ const Index = () => {
               </AccordionTrigger>
               <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                 <p itemProp="text" className="text-muted-foreground">
-                  Absolutely. All our content is developed using reliable sources, including insights from cognitive science, guidance from education experts, and proven learning methodologies. We prioritise delivering accurate and practical advice you can trust.
+                  Truth is, we build every piece on solid ground - backed by cognitive science, shaped through talks with education pros, guided by methods that actually work. You get clear, usable direction because precision matters here.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -562,7 +569,8 @@ const Index = () => {
               </AccordionTrigger>
               <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                 <p itemProp="text" className="text-muted-foreground">
-                  Not at all. Every article, guide, and resource on StudySprint is freely accessible without any sign-up required. Should we introduce features like newsletters or user accounts in the future, participation will always remain entirely optional.
+                  Nope. All materials - every piece, every tutorial, every tool - you can reach them anytime on StudySprint, free. Zero need to register. 
+                  If someday things shift, maybe a newsletter shows up or profiles appear, jumping in would never be forced. You’d still choose your path. Always.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -573,7 +581,8 @@ const Index = () => {
               </AccordionTrigger>
               <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                 <p itemProp="text" className="text-muted-foreground">
-                  We collect only essential data such as device information and browsing behaviour through analytics tools like Google Analytics. Personal details, including your email address, are only gathered when you voluntarily provide them. For full details, please review our <Link to="/privacy-policy" className="text-primary hover:underline">Privacy Policy</Link>.
+                  When you visit, some basics get recorded - stuff like what device you’re using or where you click around. 
+                  If we grab anything more personal, say an email, it is because you chose to share it. Curious about specifics? The full picture lives in our Privacy Policy.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -584,7 +593,7 @@ const Index = () => {
               </AccordionTrigger>
               <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                 <p itemProp="text" className="text-muted-foreground">
-                  Yes, 100%. All our blog posts, study guides, and educational resources are available at no cost. We may display advertisements or include affiliate links to help maintain the platform, but these never influence our honest recommendations.
+                  For sure - every single blog post, study guide, and learning tool is free to access. Ads might show up here and there, alongside some affiliate links, just so we can keep things running. Still, what we suggest comes straight from experience, nothing swayed by outside support.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -595,7 +604,8 @@ const Index = () => {
               </AccordionTrigger>
               <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                 <p itemProp="text" className="text-muted-foreground">
-                  Currently, we do not publish guest contributions. However, we may explore collaboration opportunities in the future. If you have an idea worth discussing, feel free to reach out via <a href="mailto:studysprint-official@gmail.com" className="text-primary hover:underline">studysprint-official@gmail.com</a>.
+                  Sure thing - we’re open to guest articles along with collaboration ideas.
+                  Right now, guest posts aren’t something we put online. That could change later down the line, though. Got a thought that might fit? Send it over to <a href="mailto:studysprint-official@gmail.com" className="text-primary hover:underline">studysprint-official@gmail.com</a>.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -606,7 +616,7 @@ const Index = () => {
               </AccordionTrigger>
               <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                 <p itemProp="text" className="text-muted-foreground">
-                  Of course! You're more than welcome to share links to our content with friends, classmates, or on social media. However, please note that reproducing or copying full articles without prior permission is not permitted.
+                  Sure thing. Feel free to pass along links to our stuff - share them with  friends, classmates, or on social media. That said, duplicating entire pieces word for word? Not allowed unless you ask first.
                 </p>
               </AccordionContent>
             </AccordionItem>
@@ -617,7 +627,8 @@ const Index = () => {
               </AccordionTrigger>
               <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
                 <p itemProp="text" className="text-muted-foreground">
-                  We'd love to hear from you! For any questions, feedback, or enquiries, please email us at <a href="mailto:studysprint-official@gmail.com" className="text-primary hover:underline">studysprint-official@gmail.com</a>. We aim to respond as quickly as possible.
+                  Got something on your mind? Reach out anytime by sending an email to <a href="mailto:studysprint-official@gmail.com" className="text-primary hover:underline">studysprint-official@gmail.com</a>. Questions, thoughts, suggestions - whatever it is, we’re here. Replies usually come fast, because waiting around stinks. Hearing from you matters more than you think. That inbox stays open for real talk, nothing less.
+
                 </p>
               </AccordionContent>
             </AccordionItem>
