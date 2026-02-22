@@ -3,8 +3,11 @@ import fs from 'fs/promises';
 import path from 'path';
 import { SitemapStream, streamToPromise } from 'sitemap';
 import { Readable } from 'stream';
+import { fileURLToPath } from 'url';
 
-const __dirname = path.dirname(new URL(import.meta.url).pathname);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const HOSTNAME = 'https://studysprint-official.co.za';
 
 function getToday() {
@@ -37,8 +40,12 @@ async function generateSitemap() {
 
     const xml = await streamToPromise(Readable.from(pages).pipe(stream));
 
-    // Write to public/static/sitemap.xml (your live path)
-    const outputPath = path.join(__dirname, 'public', 'static', 'sitemap.xml');
+    // Create static directory if it doesn't exist
+    const staticDir = path.join(__dirname, 'public', 'static');
+    await fs.mkdir(staticDir, { recursive: true });
+
+    // Write to public/static/sitemap.xml
+    const outputPath = path.join(staticDir, 'sitemap.xml');
     await fs.writeFile(outputPath, xml);
 
     console.log(`✅ Sitemap saved to ${outputPath}`);

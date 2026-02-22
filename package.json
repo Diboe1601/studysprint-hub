@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run generate-sitemap && vite build",
+    "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generate-sitemap": "node generate-sitemap.mjs"
+    "generate-sitemap": "echo 'Sitemap already exists at public/static/sitemap.xml'"
+
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
