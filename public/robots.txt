@@ -8,4 +8,4 @@ Crawl-delay: 10  # Optional: polite delay to avoid overload on shared hosting
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://studysprint-official.co.za/sitemap.xml
+Sitemap: https://studysprint-official.co.za/static/sitemap.xml
