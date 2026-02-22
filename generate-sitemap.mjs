@@ -35,17 +35,15 @@ async function generateSitemap() {
 
     const stream = new SitemapStream({ hostname: HOSTNAME });
 
-    const xml = await streamToPromise(
-      Readable.from(pages).pipe(stream)
-    );
+    const xml = await streamToPromise(Readable.from(pages).pipe(stream));
 
-    // IMPORTANT: Write to public/static/sitemap.xml
+    // Write to public/static/sitemap.xml (your live path)
     const outputPath = path.join(__dirname, 'public', 'static', 'sitemap.xml');
     await fs.writeFile(outputPath, xml);
 
-    console.log(`✅ Sitemap written to: ${outputPath}`);
+    console.log(`✅ Sitemap saved to ${outputPath}`);
   } catch (err) {
-    console.error('Sitemap generation failed:', err);
+    console.error('Generation failed:', err);
     process.exit(1);
   }
 }
