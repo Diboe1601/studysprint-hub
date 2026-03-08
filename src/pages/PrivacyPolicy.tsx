@@ -23,8 +23,46 @@ const PrivacyPolicy = () => {
         <div className="container max-w-4xl py-16">
           <div className="prose prose-lg max-w-none space-y-8">
 
-            {/* INTRODUCTION */}
-            <section>
+            {/* LAST UPDATED - NEW */}
+            <section className="border-b pb-4">
+              <p className="text-sm text-muted-foreground">
+                <strong>Last Updated:</strong> March 8, 2026
+              </p>
+              <p className="text-sm text-muted-foreground">
+                <strong>Effective Date:</strong> March 8, 2026
+              </p>
+            </section>
+
+            {/* QUICK SUMMARY - NEW */}
+            <section className="bg-gray-50 p-6 rounded-lg">
+              <h2 className="text-2xl font-semibold mb-4">Quick Summary</h2>
+              <p className="text-muted-foreground mb-4">Here's what you should know about your privacy on StudySprint:</p>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>We collect your name and email when you subscribe to our newsletter, comment on blog posts, or contact us directly.</li>
+                <li>We use cookies and similar technologies to analyze site traffic and improve your experience.</li>
+                <li><strong>We never sell your personal data</strong> to third parties.</li>
+                <li>You can request access to your data, corrections, or complete deletion at any time.</li>
+                <li>We retain your information for 12 months after your last interaction with our site.</li>
+              </ul>
+            </section>
+
+            {/* QUICK NAVIGATION - NEW */}
+            <section className="mb-8 p-4 bg-gray-100 rounded-lg">
+              <h3 className="font-semibold mb-3">Quick Navigation</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                <a href="#introduction" className="text-blue-600 hover:underline text-sm">Introduction</a>
+                <a href="#information-we-collect" className="text-blue-600 hover:underline text-sm">Information We Collect</a>
+                <a href="#how-we-use" className="text-blue-600 hover:underline text-sm">How We Use</a>
+                <a href="#cookies" className="text-blue-600 hover:underline text-sm">Cookies</a>
+                <a href="#third-party" className="text-blue-600 hover:underline text-sm">Third-Party</a>
+                <a href="#your-rights" className="text-blue-600 hover:underline text-sm">Your Rights</a>
+                <a href="#data-security" className="text-blue-600 hover:underline text-sm">Data Security</a>
+                <a href="#contact" className="text-blue-600 hover:underline text-sm">Contact Us</a>
+              </div>
+            </section>
+
+            {/* INTRODUCTION - YOUR EXISTING CONTENT */}
+            <section id="introduction">
               <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
               <p className="text-muted-foreground">
                 Here at StudySprint, your trust matters most. Because we care about security, every detail you share is handled with attention. When visiting our site, know that your info stays under careful watch - how it's gathered, kept, or used depends on clear choices we make together. 
@@ -32,8 +70,8 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            {/* INFORMATION WE COLLECT */}
-            <section>
+            {/* INFORMATION WE COLLECT - YOUR EXISTING CONTENT */}
+            <section id="information-we-collect">
               <h2 className="text-2xl font-semibold mb-4">Information We Collect</h2>
               <p className="text-muted-foreground mb-4">
                 Personal details could show up in our records. Information like names might get saved. Some data sticks around for handling. Records can include contact points. Details are kept under review. Processing happens when needed. Stored bits depend on purpose. Usage follows certain rules:
@@ -47,8 +85,8 @@ const PrivacyPolicy = () => {
               </ul>
             </section>
 
-            {/* HOW WE USE YOUR INFORMATION */}
-            <section>
+            {/* HOW WE USE YOUR INFORMATION - YOUR EXISTING CONTENT */}
+            <section id="how-we-use">
               <h2 className="text-2xl font-semibold mb-4">How We Use Your Information</h2>
               <p className="text-muted-foreground mb-4">
                 We use your information for the following purposes:
@@ -62,8 +100,8 @@ const PrivacyPolicy = () => {
               </ul>
             </section>
 
-            {/* COOKIES */}
-            <section>
+            {/* COOKIES - YOUR EXISTING CONTENT */}
+            <section id="cookies">
               <h2 className="text-2xl font-semibold mb-4">Cookies</h2>
               <p className="text-muted-foreground">
                 When you visit StudySprint, tiny files called cookies help the site work better plus keep track of how people move around it. 
@@ -71,8 +109,8 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            {/* THIRD-PARTY SERVICES */}
-            <section>
+            {/* THIRD-PARTY SERVICES - YOUR EXISTING CONTENT */}
+            <section id="third-party">
               <h2 className="text-2xl font-semibold mb-4">Third-Party Services</h2>
               <p className="text-muted-foreground mb-4">
                 Finding partners we trust helps us offer what you need - companies that handle specific tasks for our operations. These outside experts support different parts of how things run behind the scenes:
@@ -84,8 +122,8 @@ const PrivacyPolicy = () => {
               </ul>
             </section>
 
-            {/* USER RIGHTS */}
-            <section>
+            {/* USER RIGHTS - YOUR EXISTING CONTENT */}
+            <section id="your-rights">
               <h2 className="text-2xl font-semibold mb-4">Your Rights</h2>
               <p className="text-muted-foreground mb-4">
                 Your rights might include certain options, based on where you live:
@@ -100,8 +138,8 @@ const PrivacyPolicy = () => {
               </ul>
             </section>
 
-            {/* DATA SECURITY */}
-            <section>
+            {/* DATA SECURITY - YOUR EXISTING CONTENT */}
+            <section id="data-security">
               <h2 className="text-2xl font-semibold mb-4">Data Security</h2>
               <p className="text-muted-foreground">
                 Staying safe online means putting up barriers where they’re needed most. Only those who truly need to see your details can get near them. 
@@ -109,7 +147,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            {/* CHILDREN */}
+            {/* CHILDREN - YOUR EXISTING CONTENT */}
             <section>
               <h2 className="text-2xl font-semibold mb-4">Children&apos;s Privacy</h2>
               <p className="text-muted-foreground">
@@ -118,7 +156,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            {/* CHANGES */}
+            {/* CHANGES - YOUR EXISTING CONTENT */}
             <section>
               <h2 className="text-2xl font-semibold mb-4">Changes to This Policy</h2>
               <p className="text-muted-foreground">
@@ -126,8 +164,8 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            {/* CONTACT */}
-            <section>
+            {/* CONTACT - YOUR EXISTING CONTENT */}
+            <section id="contact">
               <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
               <p className="text-muted-foreground">
                 If you have any concerns regarding this Privacy Policy or information we hold about you, reach out using the details below:  
@@ -136,7 +174,7 @@ const PrivacyPolicy = () => {
               </p>
             </section>
 
-            {/* DISCLAIMER */}
+            {/* DISCLAIMER - YOUR EXISTING CONTENT */}
             <section className="border-t pt-8 mt-8">
               <h2 className="text-2xl font-semibold mb-4">Disclaimer</h2>
               <p className="text-muted-foreground mb-4">
