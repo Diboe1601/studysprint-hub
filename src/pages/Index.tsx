@@ -8,14 +8,13 @@ import { Input } from "@/components/ui/input";
 import { NumberTicker } from "@/components/ui/number-ticker";
 import { Marquee } from "@/components/ui/marquee";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { cn } from "@/lib/utils";
 import { ArrowRight, Download, BookOpen, Users, Target, Award, Clock, CheckCircle, Star, HelpCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import heroImage from "@/assets/hero-image.jpg";
 import studyAppsImage from "@/assets/blog-study-apps.jpg";
 import onlineCoursesImage from "@/assets/blog-online-courses.jpg";
 import productivityImage from "@/assets/blog-productivity.jpg";
-import { setPageMeta } from "@/lib/utils";
+import { cn, setPageMeta } from "@/lib/utils";
 
 interface BlogPost {
   id: string;

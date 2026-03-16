@@ -17,61 +17,63 @@ export const setPageMeta = (meta: PageMeta): void => {
   if (meta.title) {
     document.title = meta.title;
   }
-  
+
   // Set meta description
   if (meta.description) {
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', meta.description);
+    const descTag = document.querySelector('meta[name="description"]');
+    if (descTag) {
+      descTag.setAttribute("content", meta.description);
     } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = meta.description;
-      document.head.appendChild(meta);
+      const newDescTag = document.createElement("meta");
+      newDescTag.name = "description";
+      newDescTag.content = meta.description; // ✅ correctly reads the parameter
+      document.head.appendChild(newDescTag);
     }
   }
-  
+
   // Set canonical URL
   if (meta.canonical) {
-    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    const canonicalLink = document.querySelector('link[rel="canonical"]');
     if (canonicalLink) {
-      canonicalLink.setAttribute('href', meta.canonical);
+      canonicalLink.setAttribute("href", meta.canonical);
     } else {
-      const link = document.createElement('link');
-      link.rel = 'canonical';
-      link.href = meta.canonical;
-      document.head.appendChild(link);
+      const newCanonicalLink = document.createElement("link");
+      newCanonicalLink.rel = "canonical";
+      newCanonicalLink.href = meta.canonical;
+      document.head.appendChild(newCanonicalLink);
     }
   }
-  
+
   // Set robots meta tag
   if (meta.robots) {
-    let robotsMeta = document.querySelector('meta[name="robots"]');
-    if (robotsMeta) {
-      robotsMeta.setAttribute('content', meta.robots);
+    const robotsTag = document.querySelector('meta[name="robots"]');
+    if (robotsTag) {
+      robotsTag.setAttribute("content", meta.robots);
     } else {
-      const meta = document.createElement('meta');
-      meta.name = 'robots';
-      meta.content = meta.robots;
-      document.head.appendChild(meta);
+      const newRobotsTag = document.createElement("meta");
+      newRobotsTag.name = "robots";
+      newRobotsTag.content = meta.robots; // ✅ correctly reads the parameter
+      document.head.appendChild(newRobotsTag);
     }
   }
 };
 
 // Add this new function for JSON-LD structured data
 export const injectJsonLd = (jsonLd: object): void => {
-  // Remove any existing JSON-LD script tags (optional)
-  const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
-  existingScripts.forEach(script => script.remove());
-  
+  // Remove any existing JSON-LD script tags
+  const existingScripts = document.querySelectorAll(
+    'script[type="application/ld+json"]'
+  );
+  existingScripts.forEach((script) => script.remove());
+
   // Create and inject the new JSON-LD script
-  const script = document.createElement('script');
-  script.type = 'application/ld+json';
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
   script.text = JSON.stringify(jsonLd);
   document.head.appendChild(script);
 };
 
-// Optional: Helper function for blog post JSON-LD
+// Helper function for blog post JSON-LD
 export const createBlogPostJsonLd = (
   title: string,
   description: string,
@@ -85,25 +87,25 @@ export const createBlogPostJsonLd = (
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": title,
-    "description": description,
-    "url": url,
-    "datePublished": datePublished,
-    "dateModified": dateModified,
-    "author": {
+    headline: title,
+    description: description,
+    url: url,
+    datePublished: datePublished,
+    dateModified: dateModified,
+    author: {
       "@type": "Person",
-      "name": authorName,
-      ...(authorUrl && { "url": authorUrl })
+      name: authorName,
+      ...(authorUrl && { url: authorUrl }),
     },
-    ...(imageUrl && { "image": imageUrl }),
-    "mainEntityOfPage": {
+    ...(imageUrl && { image: imageUrl }),
+    mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": url
-    }
+      "@id": url,
+    },
   };
 };
 
-// Optional: Helper function for website JSON-LD
+// Helper function for website JSON-LD
 export const createWebsiteJsonLd = (
   name: string,
   url: string,
@@ -112,8 +114,8 @@ export const createWebsiteJsonLd = (
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": name,
-    "url": url,
-    ...(description && { "description": description })
+    name: name,
+    url: url,
+    ...(description && { description: description }),
   };
 };
