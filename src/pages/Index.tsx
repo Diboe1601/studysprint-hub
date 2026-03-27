@@ -39,10 +39,97 @@ const Index = () => {
       robots: "index,follow",
     });
   }, []);
+
+  // ✅ FAQ JSON-LD Schema — injected into <head> so Google reads it regardless of accordion state
+  useEffect(() => {
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is StudySprint?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "StudySprint is a free educational platform for students offering study guides, app reviews, bursary advice, and downloadable templates. Every day, StudySprint opens doors without charging a fee, helping learners build better routines through small, practical shifts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the study tips and recommendations research-based?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every piece is built on solid ground - backed by cognitive science, shaped through talks with education professionals, and guided by methods that actually work."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to register or create an account?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. All materials - every piece, every tutorial, every tool - are accessible anytime on StudySprint, completely free. Zero registration required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does StudySprint collect personal information?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When you visit, some basics get recorded such as device type and browsing behaviour. If anything more personal like an email is collected, it is only because you chose to share it. Full details are in our Privacy Policy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is StudySprint completely free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes - every blog post, study guide, and learning tool is free to access. Ads and some affiliate links may appear to keep the platform running, but recommendations are based on experience only."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you accept guest posts or partnership requests?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We are open to collaboration ideas. Guest posts are not currently published but that may change. Contact us at studysprint-official@gmail.com with your ideas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I share StudySprint articles with others?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Feel free to share links to our content with friends, classmates, or on social media. Duplicating entire articles word for word is not allowed without permission."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I contact StudySprint?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Reach out anytime by emailing studysprint-official@gmail.com. Questions, thoughts, and suggestions are all welcome and replies are usually fast."
+          }
+        }
+      ]
+    };
+
+    const existingScript = document.querySelector("#faq-schema");
+    if (existingScript) existingScript.remove();
+
+    const script = document.createElement("script");
+    script.id = "faq-schema";
+    script.type = "application/ld+json";
+    script.text = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
+
+    return () => {
+      document.querySelector("#faq-schema")?.remove();
+    };
+  }, []);
+
   const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!email || !emailRegex.test(email)) {
       toast({
@@ -54,10 +141,7 @@ const Index = () => {
     }
 
     setIsSubmitting(true);
-    
-    // Simulate API call delay
     await new Promise(resolve => setTimeout(resolve, 800));
-    
     toast({
       title: "Success!",
       description: "Thank you for subscribing! Check your email for the study planner."
@@ -241,10 +325,8 @@ const Index = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        {/* Dark Overlay for Text Readability */}
         <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
         
-        {/* Content */}
         <div className="container relative z-10 py-16 md:py-24 lg:py-32">
           <div className="max-w-3xl space-y-8 text-white">
             <div>
@@ -259,7 +341,6 @@ const Index = () => {
               </p>
             </div>
             
-            {/* Stats */}
             <div className="grid grid-cols-3 gap-6 py-6 border-y border-white/30">
               <div>
                 <div className="text-3xl font-bold mb-1 drop-shadow-lg">
@@ -306,14 +387,14 @@ const Index = () => {
               When tests loom, when tools need comparing, when support funds open - you find what works, stripped down, ready to use. Hidden agendas do not live here.
             </p>
             <p>
-              Meant for high schoolers,university and TVET students, and postgraduate candidates , what we offer stays rooted in South Africa yet fits learners everywhere. Not drowning in endless data matters - so filtering noise out comes first. Confusion from mixed messages? That gets cleared up here. Tips lacking proof or purpose won’t stick around long. Real tools show up instead - ones that fit actual needs without false promises. Scholarships listed are within reach, not pipe dreams. Trust builds through consistency, so every piece follows strict review rules. Sources back claims when needed, never hidden or vague. No one pays to be featured - that line doesn’t get crossed. Updates roll in often as systems shift and deadlines change. 
-              Suggestions appear only if they’ve shown results before. Better grades become possible. Anxiety dips slowly. Progress feels closer than expected.
+              Meant for high schoolers,university and TVET students, and postgraduate candidates , what we offer stays rooted in South Africa yet fits learners everywhere. Not drowning in endless data matters - so filtering noise out comes first. Confusion from mixed messages? That gets cleared up here. Tips lacking proof or purpose won't stick around long. Real tools show up instead - ones that fit actual needs without false promises. Scholarships listed are within reach, not pipe dreams. Trust builds through consistency, so every piece follows strict review rules. Sources back claims when needed, never hidden or vague. No one pays to be featured - that line doesn't get crossed. Updates roll in often as systems shift and deadlines change. 
+              Suggestions appear only if they've shown results before. Better grades become possible. Anxiety dips slowly. Progress feels closer than expected.
             </p>
           </div>
         </div>
       </section>
 
-      {/* What You’ll Find on StudySprint */}
+      {/* What You'll Find on StudySprint */}
       <section className="py-16 bg-accent/5" aria-label="StudySprint Content Overview">
         <div className="container max-w-5xl">
           <h2 className="text-3xl font-bold mb-6">StudySprint Content Overview</h2>
@@ -326,9 +407,7 @@ const Index = () => {
               <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
               <div>
                 <h3 className="font-semibold">Step-by-Step Study Guides</h3>
-                <p className="text-sm text-muted-foreground">Finding answers yourself instead of just rereading helps memory stick. Spreading study sessions out over time builds stronger retention gradually. Working in focused bursts followed by short breaks keeps energy steady throughout. Approaches used during tests can change outcomes more than expected.
-
-                </p>
+                <p className="text-sm text-muted-foreground">Finding answers yourself instead of just rereading helps memory stick. Spreading study sessions out over time builds stronger retention gradually. Working in focused bursts followed by short breaks keeps energy steady throughout. Approaches used during tests can change outcomes more than expected.</p>
               </div>
             </div>
             <div className="flex items-start gap-3 p-4 rounded-lg border bg-card">
@@ -525,8 +604,8 @@ const Index = () => {
         </div>
       </section>
 
-      {/* FAQ Section - SEO Optimized with Schema Markup */}
-      <section className="py-16 bg-accent/5" aria-label="Frequently asked questions" itemScope itemType="https://schema.org/FAQPage">
+      {/* FAQ Section - JSON-LD schema injected via useEffect above */}
+      <section className="py-16 bg-accent/5" aria-label="Frequently asked questions">
         <div className="container max-w-4xl">
           <div className="text-center mb-12">
             <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary mb-4">
@@ -539,95 +618,94 @@ const Index = () => {
           </div>
           
           <Accordion type="single" collapsible className="w-full space-y-4">
-            <AccordionItem value="item-1" className="border border-border rounded-lg px-6 bg-card" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+            <AccordionItem value="item-1" className="border border-border rounded-lg px-6 bg-card">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                <span itemProp="name">What is StudySprint?</span>
+                What is StudySprint?
               </AccordionTrigger>
-              <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                <p itemProp="text" className="text-muted-foreground">
+              <AccordionContent>
+                <p className="text-muted-foreground">
                   Every day, StudySprint opens doors without charging a fee. Created for learners who want more from their time, it nudges better routines into place through small shifts. Instead of just reading, you get step-by-step walkthroughs that show how things work. 
-                  Hidden inside are handpicked apps and links - quiet helpers when the workload piles up. Progress doesn’t shout here; it grows where attention goes. Behind each post lies a reason: make studying feel less like climbing, more like moving forward.
+                  Hidden inside are handpicked apps and links - quiet helpers when the workload piles up. Progress doesn't shout here; it grows where attention goes. Behind each post lies a reason: make studying feel less like climbing, more like moving forward.
                 </p>
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-2" className="border border-border rounded-lg px-6 bg-card" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+            <AccordionItem value="item-2" className="border border-border rounded-lg px-6 bg-card">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                <span itemProp="name">Are the study tips and recommendations research-based?</span>
+                Are the study tips and recommendations research-based?
               </AccordionTrigger>
-              <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                <p itemProp="text" className="text-muted-foreground">
+              <AccordionContent>
+                <p className="text-muted-foreground">
                   Truth is, we build every piece on solid ground - backed by cognitive science, shaped through talks with education pros, guided by methods that actually work. You get clear, usable direction because precision matters here.
                 </p>
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-3" className="border border-border rounded-lg px-6 bg-card" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+            <AccordionItem value="item-3" className="border border-border rounded-lg px-6 bg-card">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                <span itemProp="name">Do I need to register or create an account?</span>
+                Do I need to register or create an account?
               </AccordionTrigger>
-              <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                <p itemProp="text" className="text-muted-foreground">
+              <AccordionContent>
+                <p className="text-muted-foreground">
                   Nope. All materials - every piece, every tutorial, every tool - you can reach them anytime on StudySprint, free. Zero need to register. 
-                  If someday things shift, maybe a newsletter shows up or profiles appear, jumping in would never be forced. You’d still choose your path. Always.
+                  If someday things shift, maybe a newsletter shows up or profiles appear, jumping in would never be forced. You'd still choose your path. Always.
                 </p>
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-4" className="border border-border rounded-lg px-6 bg-card" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+            <AccordionItem value="item-4" className="border border-border rounded-lg px-6 bg-card">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                <span itemProp="name">Does StudySprint collect personal information?</span>
+                Does StudySprint collect personal information?
               </AccordionTrigger>
-              <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                <p itemProp="text" className="text-muted-foreground">
-                  When you visit, some basics get recorded - stuff like what device you’re using or where you click around. 
+              <AccordionContent>
+                <p className="text-muted-foreground">
+                  When you visit, some basics get recorded - stuff like what device you're using or where you click around. 
                   If we grab anything more personal, say an email, it is because you chose to share it. Curious about specifics? The full picture lives in our Privacy Policy.
                 </p>
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-5" className="border border-border rounded-lg px-6 bg-card" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+            <AccordionItem value="item-5" className="border border-border rounded-lg px-6 bg-card">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                <span itemProp="name">Is StudySprint completely free?</span>
+                Is StudySprint completely free?
               </AccordionTrigger>
-              <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                <p itemProp="text" className="text-muted-foreground">
+              <AccordionContent>
+                <p className="text-muted-foreground">
                   For sure - every single blog post, study guide, and learning tool is free to access. Ads might show up here and there, alongside some affiliate links, just so we can keep things running. Still, what we suggest comes straight from experience, nothing swayed by outside support.
                 </p>
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-6" className="border border-border rounded-lg px-6 bg-card" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+            <AccordionItem value="item-6" className="border border-border rounded-lg px-6 bg-card">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                <span itemProp="name">Do you accept guest posts or partnership requests?</span>
+                Do you accept guest posts or partnership requests?
               </AccordionTrigger>
-              <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                <p itemProp="text" className="text-muted-foreground">
-                  Sure thing - we’re open to guest articles along with collaboration ideas.
-                  Right now, guest posts aren’t something we put online. That could change later down the line, though. Got a thought that might fit? Send it over to <a href="mailto:studysprint-official@gmail.com" className="text-primary hover:underline">studysprint-official@gmail.com</a>.
+              <AccordionContent>
+                <p className="text-muted-foreground">
+                  Sure thing - we're open to guest articles along with collaboration ideas.
+                  Right now, guest posts aren't something we put online. That could change later down the line, though. Got a thought that might fit? Send it over to <a href="mailto:studysprint-official@gmail.com" className="text-primary hover:underline">studysprint-official@gmail.com</a>.
                 </p>
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-7" className="border border-border rounded-lg px-6 bg-card" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+            <AccordionItem value="item-7" className="border border-border rounded-lg px-6 bg-card">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                <span itemProp="name">Can I share StudySprint articles with others?</span>
+                Can I share StudySprint articles with others?
               </AccordionTrigger>
-              <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                <p itemProp="text" className="text-muted-foreground">
-                  Sure thing. Feel free to pass along links to our stuff - share them with  friends, classmates, or on social media. That said, duplicating entire pieces word for word? Not allowed unless you ask first.
+              <AccordionContent>
+                <p className="text-muted-foreground">
+                  Sure thing. Feel free to pass along links to our stuff - share them with friends, classmates, or on social media. That said, duplicating entire pieces word for word? Not allowed unless you ask first.
                 </p>
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="item-8" className="border border-border rounded-lg px-6 bg-card" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+            <AccordionItem value="item-8" className="border border-border rounded-lg px-6 bg-card">
               <AccordionTrigger className="text-left font-semibold hover:no-underline">
-                <span itemProp="name">How can I contact StudySprint?</span>
+                How can I contact StudySprint?
               </AccordionTrigger>
-              <AccordionContent itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                <p itemProp="text" className="text-muted-foreground">
-                  Got something on your mind? Reach out anytime by sending an email to <a href="mailto:studysprint-official@gmail.com" className="text-primary hover:underline">studysprint-official@gmail.com</a>. Questions, thoughts, suggestions - whatever it is, we’re here. Replies usually come fast, because waiting around stinks. Hearing from you matters more than you think. That inbox stays open for real talk, nothing less.
-
+              <AccordionContent>
+                <p className="text-muted-foreground">
+                  Got something on your mind? Reach out anytime by sending an email to <a href="mailto:studysprint-official@gmail.com" className="text-primary hover:underline">studysprint-official@gmail.com</a>. Questions, thoughts, suggestions - whatever it is, we're here. Replies usually come fast, because waiting around stinks. Hearing from you matters more than you think. That inbox stays open for real talk, nothing less.
                 </p>
               </AccordionContent>
             </AccordionItem>
